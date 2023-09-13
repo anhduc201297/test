@@ -1,2 +1,0 @@
-* BÀI TẬP NHÓM FRESHER VIỆN
-XÂY DỰNG PHÂN HỆ QUẢN LÝ NHÂN VIÊN – AMIS Kế Toán

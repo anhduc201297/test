@@ -1,1 +1,0 @@
-Lê Tuấn Ngọc Huy - HUST

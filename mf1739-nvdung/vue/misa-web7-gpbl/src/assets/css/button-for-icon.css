@@ -1,8 +1,0 @@
-/******* button cho icon *******/
-.m-btn-for-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--rounded-button-height);
-    cursor: pointer;
-}

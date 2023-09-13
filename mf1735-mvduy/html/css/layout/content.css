@@ -1,8 +1,0 @@
-.content{
-    width: calc(100% - 200px);
-    height: calc(100vh - 56px);
-    background-color: var(--main-background-color);
-    float: right;
-    padding: 10px 12px;
-    box-sizing: border-box;
-}

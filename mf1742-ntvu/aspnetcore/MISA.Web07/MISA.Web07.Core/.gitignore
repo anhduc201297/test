@@ -1,8 +1,0 @@
-﻿# Bỏ qua các tệp cục bộ
-bin/
-obj/
-
-# Bỏ qua các tệp cơ sở dữ liệu
-*.sqlite
-*.mdf
-*.ldf
