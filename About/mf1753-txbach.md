@@ -1,1 +1,0 @@
-Giới thiệu bản thân : Trần Xuân Bách, MF1753 , Sinh năm 2002
