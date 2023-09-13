@@ -1,0 +1,119 @@
+.table-pri {
+  width: 100%;
+  min-width: 1150px;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.table-pri__row {
+  height: 48px;
+  font-size: var(--font-size-body);
+  background-color: var(--background-color-white);
+}
+
+.table-pri__row:hover .table-pri__body:first-child,
+.table-pri__row:hover {
+  background-color: var(--element-color-blue-hover-light);
+}
+
+thead .table-pri__row:first-child{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 2;
+}
+
+tbody {
+  
+}
+
+.table-pri__title,
+.table-pri__body {
+  border-right: 1px solid var(--border-color-grey);
+  border-bottom: 1px solid var(--border-color-grey);
+  padding: 8px;
+  text-align: left;
+}
+
+.table-pri__title {
+  font-weight: 500;
+  background-color: var(--background-color-silver);
+}
+
+.table-pri__body {
+}
+
+
+.table-pri__title.center,
+.table-pri__body.center {
+  text-align: center;
+}
+
+.table-pri__title:first-child,
+.table-pri__body:first-child {
+  padding-left: 16px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.table-pri__title:last-child,
+.table-pri__body:last-child {
+  padding-left: 16px;
+  /* position: sticky; */
+  right: 0;
+  z-index: 1;
+}
+
+.table-pri__body:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: var(--background-color-white);
+
+}
+
+/* .table-pri__title:first-child,
+.table-pri__body:first-child,
+.table-pri__title:nth-child(2),
+.table-pri__body:nth-child(2) {
+  border-left: none;
+} */
+
+
+
+.table-pri__row:hover {
+  background-color: var(--element-color-blue-hover-light);
+}
+
+.table-checkbox {
+  margin-right: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.num-record-option {
+
+}
+
+.num-record-option .num-record {
+  padding: 8px 12px 8px 12px;
+  width: 76px;
+  height: 36px;
+  border: solid 1px var(--background-color-grey);
+  border-radius: 4px;
+}
+
+.num-record-option .num-record:focus {
+  border-color: var(--element-color-blue-focus);
+}
+
+.num-record option {
+
+}
+
+.num-record option:hover {
+  background-color: var(--element-color-blue-hover-light);
+}
+
+

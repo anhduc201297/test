@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B9BDC4;fill-opacity:0;}
+	.st1{fill:#B9BDC4;}
+</style>
+<script>
+	!function(){function t(t){this.element=t,this.animationId,this.start=null,this.init()}if(!window.requestAnimationFrame){var i=null;window.requestAnimationFrame=function(t,n){var e=(new Date).getTime();i||(i=e);var a=Math.max(0,16-(e-i)),o=window.setTimeout(function(){t(e+a)},a);return i=e+a,o}}t.prototype.init=function(){var t=this;this.animationId=window.requestAnimationFrame(t.triggerAnimation.bind(t))},t.prototype.reset=function(){var t=this;window.cancelAnimationFrame(t.animationId)},t.prototype.triggerAnimation=function(t){var i=this;this.start||(this.start=t);var n=t-this.start;800&gt;n||(this.start=this.start+800),this.element.setAttribute(&quot;transform&quot;,&quot;rotate(&quot;+parseInt(Math.min(n/100,8))%8*45+&quot; 16 16)&quot;);if(document.documentElement.contains(this.element))window.requestAnimationFrame(i.triggerAnimation.bind(i))};var n=document.getElementsByClassName(&quot;nc-loop_dots-06-32&quot;),e=[];if(n)for(var a=0;n.length&gt;a;a++)!function(i){e.push(new t(n[i]))}(a);document.addEventListener(&quot;visibilitychange&quot;,function(){&quot;hidden&quot;==document.visibilityState?e.forEach(function(t){t.reset()}):e.forEach(function(t){t.init()})})}();
+	</script>
+<g id="Search-6">
+	<rect id="Rectangle_1561-7" class="st0" width="24" height="24"/>
+	<g id="Group_12315-7">
+		<path id="Path_11052-7" class="st1" d="M10,19c-5,0-9-4-9-9s4-9,9-9s9,4,9,9S15,19,10,19z M10,3c-3.9,0-7,3.1-7,7s3.1,7,7,7
+			s7-3.1,7-7S13.9,3,10,3z"/>
+		<path id="Path_11053-7" class="st1" d="M22.7,21.3L18.4,17c-0.4,0.5-0.9,1-1.4,1.4l4.3,4.3c0.4,0.3,1.1,0.2,1.4-0.2
+			C23,22.2,23,21.7,22.7,21.3z"/>
+	</g>
+</g>
+</svg>

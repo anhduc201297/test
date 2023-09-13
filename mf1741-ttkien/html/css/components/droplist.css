@@ -1,0 +1,41 @@
+.droplist {
+    font-family: notosans-regular;
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+}
+
+.droplist-item {
+    padding: 0 8px;
+    margin: 2px 0;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.droplist-item:hover {
+    background-color: #e6e6e6ec;
+    color: var(--primary-btn-background-color);
+}
+
+.droplist-func {
+    top: 20px;
+    right: 0;
+    min-width: 110px;
+    z-index: 1;
+}
+
+.droplist-record {
+    left: 12px;
+    bottom: 45px;
+    width: 200px;
+    z-index: 1;
+}
+
+.droplist-record > .droplist-item:hover{
+    background-color: var(--primary-btn-background-color);
+    color: #fff;
+}

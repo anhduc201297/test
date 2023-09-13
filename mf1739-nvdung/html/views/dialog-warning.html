@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog warning</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container-ms-popup">
+      <div class="ms-popup-background"></div>
+      <div class="dialog-containar">
+        <div class="dialog-header">
+          <div class="dialog-title">Tiêu đề dialog</div>
+          <!-- Nút close -->
+          <div class="mi mi-24 mi-close" id="btn-dlg-close"></div>
+        </div>
+        <div class="dialog-content flex-row">
+          <div class="dialog-icon">
+            <div class="mi mi-24 mi-warning"></div>
+          </div>
+          <div class="dialog-mota flex-align-center">
+            Mã nhân viên &lt;001&gt; đã tồn tại trong hệ thống, vui lòng kiểm
+            tra lại.
+          </div>
+        </div>
+        <div class="dialog-footer flex-row flex-right">
+          <button type="button" class="m-btn m-btn-secondary">Button phụ</button>
+          <button type="button" class="m-btn">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

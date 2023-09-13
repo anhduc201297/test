@@ -1,0 +1,30 @@
+/* import các file css dùng chung */
+@import url(./base.css);
+@import url(./icon.css);
+@import url(./scroller.css);
+@import url(./button-for-icon.css);
+@import url(./extensions.css);
+
+* {
+  font-family: MISA Fonts;
+  font-size: var(--font-size-default);
+  color: #212121;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  text-transform: none;
+}
+
+body {
+  margin: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--main-background-color);
+  width: calc(100vw - 200px);
+}

@@ -1,0 +1,111 @@
+.ms-popup {
+  position: relative;
+  transition: all 0.2s;
+  z-index: 10;
+  max-width: calc(100% - 30px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.popup-show {
+  display: flex !important;
+}
+
+.container-ms-popup {
+  transition: all 0.2s;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 100; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+
+.ms-popup-background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.25s ease;
+}
+
+.ms-popup---content {
+    position: relative;
+    min-width: 80vw;
+    max-width: 80vw;
+    width: 80vw;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 24px; /* zero */
+    padding-bottom: 12px; /* zero */
+}
+
+
+/* ----- header ----- */
+.ms-popup--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ms-popup--title, .ms-popup-close {
+    display: flex;
+    align-items: center;
+}
+
+.ms-popup--title .title-popup {
+    color: #212121; /* zero */
+    font-weight: 700; /* bold zero */
+    font-size: 24px; /* zero */
+}
+
+.ms-popup--title .m-form-checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0 1.5rem;
+}
+
+.ms-popup--title .m-form-checkbox label {
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.ms-popup-close div:first-child {
+    margin-right: 6px;
+}
+
+/* ----- main popup ----- */
+.ms-popup-content {
+    transition: all 0.23s ease 0.1s;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 75vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.popup-content {
+    padding: 24px 10px 24px 0;
+}
+
+.basic-info {
+    display: flex;
+}
+
+.basic-info-left { width: 50%; padding-right: 13px; }
+.basic-info-right { width: 50%; padding-left: 13px; }
+
+.contact-info {
+    padding-top: 20px;
+}

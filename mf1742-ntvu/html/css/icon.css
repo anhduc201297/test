@@ -1,0 +1,99 @@
+.icon-tool {
+    background-image: url(../assets/icons/tool.svg);
+}
+.icon-menu {
+    background-image: url(../assets/icons/menu.svg);
+}
+.icon-grid {
+    background-image: url(../assets/icons/grid.svg);
+}
+.icon-down-regular {
+    background-image: url(../assets/icons/down-regular.svg);
+}
+.icon-down-solid {
+    background-image: url(../assets/icons/down-fill.svg);
+}
+.icon-bell {
+    background-image: url(../assets/icons/bell.svg);
+}
+.icon-refresh {
+    background-image: url(../assets/icons/refresh.svg);
+}
+.icon-refresh:hover {
+    background-image: url(../assets/icons/refresh-bold.svg);
+}
+.icon-ask {
+    background-image: url(../assets/icons/ask.svg);
+}
+.icon-close {
+    background-image: url(../assets/icons/x.svg);
+}
+.icon-pencil {
+    background-image: url(../assets/icons/pencil.svg);
+}
+.icon-radio-unchecked {
+    background-image: url(../assets/icons/radio-uncheck.svg);
+}
+.icon-calendar {
+    background-image: url(../assets/icons/calendar.svg);
+}
+.icon-general {
+    background-image: url(../assets/icons/general.svg);
+}
+.icon-cash {
+    background-image: url(../assets//icons/cash.svg);
+}
+.icon-cart {
+    background-image: url(../assets/icons/cart.svg);
+}
+.icon-buy {
+    background-image: url(../assets/icons/buy.svg);
+}
+.icon-money-keeper {
+    background-image: url(../assets/icons/money-keeper.svg);
+}
+.icon-order {
+    background-image: url(../assets/icons/order.svg);
+}
+.icon-repository {
+    background-image: url(../assets/icons/repository.svg);
+}
+.icon-tax {
+    background-image: url(../assets/icons/tax.svg);
+}
+.icon-overall {
+    background-image: url(../assets/icons/overal.svg);
+}
+.icon-report {
+    background-image: url(../assets/icons/report.svg);
+}
+.icon-figure-out {
+    background-image: url(../assets/icons/figure-out.svg);
+}
+.icon-price {
+    background-image: url(../assets/icons/price.svg);
+}
+.icon-finance {
+    background-image: url(../assets/icons/finance.svg);
+}
+.icon-car {
+    background-image: url(../assets/icons/car.svg);
+}
+.icon-warning-48 {
+    background-image: url(../assets/icons/warning-48.svg);
+}
+.icon-check-no-bg {
+    background-image: url(../assets/icons/check-green-no-bg.svg);
+}
+.icon-right {
+    background-image: url(../assets/icons/right.svg);
+}
+.icon-database {
+    background-image: url(../assets/icons/database.svg);
+}
+.icon-logout {
+    background-image: url(../assets/icons/logout.svg);
+}
+.icon-search {
+    background-image: url(../assets/icons/search.svg);
+}

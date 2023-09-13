@@ -1,0 +1,110 @@
+.header {
+	width: 100%;
+	height: 56px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: 0 12px;
+	box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+}
+.header-left {
+	display: flex;
+	align-items: center;
+	width: calc(100vw - 500px);
+	padding-right: 32px;
+	@media (max-width: 768px) {
+		width: 300px;
+	}
+}
+#hideSidebar-controller {
+	margin-right: 16px;
+}
+.header-title .m-only-icon-btn {
+	flex: 0 0 24px;
+}
+.header-title {
+	width: 100%;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+}
+.header-title h1 {
+	line-height: 0;
+	width: min(auto, calc(100% - 10px));
+	font: var(--font-head-3);
+	text-transform: uppercase;
+	overflow-x: scroll;
+	color: var(--text-color);
+}
+.header-title h1::-webkit-scrollbar {
+	display: none;
+}
+.header-info {
+	flex: 0 0 230px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 24px;
+}
+.header-nav-btn {
+	height: 100%;
+	width: 50px;
+	text-align: center;
+	line-height: 56px;
+	position: relative;
+	z-index: 2;
+}
+.header-nav-btn:hover .m-only-icon-btn {
+	background-image: url(../../assets/icons/bell-white.svg);
+	animation: ring 0.2s ease;
+}
+.header-nav-btn:hover {
+	background-color: var(--color-grey-600);
+}
+.header-nav-btn:hover::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 10px solid var(--color-grey-600);
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 0px;
+}
+
+.header-user-info {
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.header-user-info:focus {
+	border: 1px solid var(--color-border);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.user-avatar {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user-avatar img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.avatar-32 {
+	height: 32px;
+	width: 32px;
+}
+.avatar-56 {
+	--size: 56px;
+	width: var(--size);
+	height: var(--size);
+}
+.user-name {
+	font-family: m-semibold;
+	text-transform: capitalize;
+}

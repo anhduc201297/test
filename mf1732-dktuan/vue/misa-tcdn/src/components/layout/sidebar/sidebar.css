@@ -1,0 +1,77 @@
+.sidebar {
+    margin-top: var(--header-height);
+    overflow-y: scroll;
+    height: calc(100vh - var(--header-height));
+    width: var(--sidebar-width);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1F1F1F;
+    transition: all 0.1s linear;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 4px;
+}
+
+.sidebar-btn {
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    background-color: #1F1F1F;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.sidebar-menu-item {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    animation: appear 0.4s linear;
+
+}
+
+.router-link-active .sidebar-btn, .sidebar-btn:hover {
+    background-color: #757575;
+}
+
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+    background: url(../../../assets/img/Sprites.64af8f61.svg) no-repeat;
+}
+
+.sidebar-content {
+    margin-top: 12px;
+    padding: 0 12px 0;
+}
+
+.sidebar.shortened {
+    width: var(--shortened-sidebar-width);
+}
+
+.sidebar.shortened .sidebar-menu-item {
+    animation: unset;
+    display: none;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

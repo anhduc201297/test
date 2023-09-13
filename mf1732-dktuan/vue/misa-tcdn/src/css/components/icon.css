@@ -1,0 +1,47 @@
+.icon {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(@/assets/img/Sprites.64af8f61.svg) no-repeat;
+    background-position: -425px -33px;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reload-icon {
+    width: 22px;
+    height: 24px;
+    background-color: red;
+    background: url(@/assets/img/Sprites.64af8f61.svg) no-repeat;
+    background-position: -425px -200px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.export-icon {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    background-position: -704px -255px;
+}
+
+.left-arrow-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    background-position: -32px -360px;
+}
+
+.right-arrow-icon {
+    margin: unset;
+    width: 16px;
+    height: 16px;
+    background-position: -78px -360px;
+}

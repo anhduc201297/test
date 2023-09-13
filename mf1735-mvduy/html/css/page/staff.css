@@ -1,0 +1,106 @@
+.header-content{
+    width: 100%;
+    height: 48px; 
+    position: relative;;
+}
+
+.header-content button{
+    position: absolute;
+    right: 0px;
+}
+
+.main-content{
+    width: 100%;
+    height: calc(100% - 48px);
+    background-color:#ffffff;
+    padding: 8px 12px;
+    position: relative;
+}
+.main-content .toolbar{
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.main-content .table-content{
+    width: 100%;
+    height: calc(100% - 48px - 60px);
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header-title{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.header-content button{
+    text-align: center;
+}
+
+.main-content .d-paging{
+    position: absolute;
+    bottom: -6px;
+    right: 12px;
+}
+
+.header .avatar-name{
+    margin-right: 8px;
+}
+
+.main-content .toolbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+.table-content table tr td:last-child {
+    color: rgb(0, 73, 153);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table-content table tr td:last-child .down-select{
+    position: absolute;
+    right: 10px;
+}
+
+.table-content table tr td:last-child .down-select:hover{
+    z-index: 50;
+}
+
+.d-detail-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.d-form-popup{
+    visibility: hidden;
+}
+.delete-notify-dialog{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+}
+
+.d-delete-notify-popup{
+    visibility: hidden;
+}
+
+.popup-background{
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 98;
+    opacity: 1;
+}

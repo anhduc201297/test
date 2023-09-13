@@ -1,0 +1,76 @@
+/*
+    html mẫu cho radio-button:
+
+    <div id="m-rdo-gioitinh" class="m-rdo" style="width: 66px;">
+        <label>Giới tính</label>
+        <div class="m-rdo-content">
+            <div class="item m-rdo-selected">
+                <a><span></span></a>
+                <label>Nam</label>
+            </div>
+            <div class="item">
+                <a><span></span></a>
+                <label>Nữ</label>
+            </div>
+        </div>
+    </div> 
+
+    Chọn item thì thêm class m-rdo-selected vào div.item đó
+*/
+
+.m-rdo label {
+    /* font-family: Roboto; */
+    height: var(--rounded-button-height); /* zero  36px*/
+    color: #1F1F1F;
+
+}
+
+.m-rdo .m-rdo-content {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 8px;
+}
+
+.m-rdo-content .item {
+    display: flex;
+    /* width: max-content; */
+    height: var(--rounded-button-height); /* zero  36px*/
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item a {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: solid 1px #AFAFAF;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.item a span {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2CA01C;
+}
+
+.item label {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+    
+
+.m-rdo-selected a {
+    border-color: #2CA01C !important;
+}
+.m-rdo-selected a span {
+    display: block !important;
+}

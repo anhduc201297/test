@@ -1,0 +1,111 @@
+@import url(@/css/grid.css);
+@import url(@/css/components/icon.css);
+    
+
+.container {
+    height: calc(100vh - var(--header-height));
+    background-color: #EEEEEE;
+    padding: 0 20px 0 20px;
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    transition: all 0.1s linear;
+    position: relative;
+}
+
+.sidebar.shortened ~ .container {
+    margin-left: var(--shortened-sidebar-width);
+}
+
+
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 1px solid #afafaf;
+}
+
+
+.edit-btn div {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.arrow-down-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    background: url(@/assets/img/Sprites.64af8f61.svg) no-repeat;
+    background-position: -895px -358px;
+}
+
+
+/* Modal */
+
+.modal-title-bar {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-title-bar span {
+    width: 24px;
+    height: 24px;
+    background-image: url(@/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.help-btn {
+    background-position: -732px -31px;
+}
+
+.close-btn {
+    background-position: -144px -144px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+}
+
+.modal-header h3 {
+    margin-right: 12px;
+    font-size: 2.2rem;
+}
+
+.modal-header label {
+    margin-right: 24px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.modal-header .checkbox {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+
+.toast-container {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in-out;
+}

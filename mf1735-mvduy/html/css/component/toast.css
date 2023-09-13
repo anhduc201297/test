@@ -1,0 +1,31 @@
+.d-toast{
+    height: 56px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.078);
+}
+
+.left-toast{
+    display: flex;
+    align-items: center;
+}
+
+.left-toast .icon{
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.left-toast .title-toast{
+    font-family: MISA Bold;
+    color: var(--color-primary);
+    margin-right: 4px;
+}
+
+.right-toast .icon{
+    margin-right: 16px;
+}

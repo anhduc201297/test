@@ -1,0 +1,46 @@
+
+
+.droplist__page {
+  height: 30px;
+  display: flex;
+  border: var(--boder--solid--input);
+  border-radius: var(--border--radius--input);
+  width: 195px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.droplist__text {
+  cursor: pointer;
+}
+
+.droplist__data {
+  position: absolute;
+  width: 207px;
+  background-color: var(--color--white);
+  border-radius: 3px;
+  border: 1px solid #ccc2c2;
+  left: 0;
+  top: -155px;
+}
+
+.droplist__icon {
+  position: absolute;
+  height: 34px;
+  width: 36px;
+  top: 0;
+  right: 0;
+}
+
+.droplist__icon-drop {
+  background: url("/assets/img/Sprites.64af8f61.svg") no-repeat -560px -360px;
+  height: 16px;
+  width: 16px;
+  margin-top: 9px;
+  margin-left: 10px;
+  border-radius: var(--border--radius--input);
+  border: none;
+  cursor: pointer;
+}

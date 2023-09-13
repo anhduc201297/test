@@ -1,0 +1,70 @@
+.content {
+    width: 100%;
+    padding: 24px 24px 12px 24px;
+    flex: 1;
+    background-color: #e3e9e7;
+    overflow: auto;
+}
+
+.content-main {
+    border-bottom-left-radius:var(--border-radius) ;
+    border-bottom-right-radius:var(--border-radius) ;
+}
+
+/* Header chứa phần title và nút thêm mới */
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+/* Phần menu điều chỉnh table */
+.content-menu {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    padding: 12px;
+}
+
+.content-menu-right{
+    justify-content: flex-end;
+}
+
+.menu-selected {
+    margin-right: 24px;
+}
+
+.menu-selected span {
+    font-weight: 700;
+}
+
+.menu-unselected {
+    color: red;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.menu-delete {
+    cursor: pointer;
+}
+
+.content-menu__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 14px;
+}
+
+/* Bảng hiển thị dữ liệu */
+.content-main-table {
+    height: calc(100vh - 250px);
+    width: 100%;
+    background-color: #ffffff;  
+    overflow: auto;  
+}

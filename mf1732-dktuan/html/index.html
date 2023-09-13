@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>AMIS Kế toán</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            
+            <div class="sidebar-content">
+                <button class="sidebar-btn active">
+                    <span class="sidebar-icon" style="background-position: -33px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Tổng quan
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -77px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Tiền mặt
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -121px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Tiền gửi
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -165px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Mua hàng
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -207px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Bán hàng
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -254px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Quản lý hóa đơn
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -294px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Kho
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -339px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Công cụ dụng cụ
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -382px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Tài sản cố định
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -427px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Thuế
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -471px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Giá thành
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -514px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Tổng hợp
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -427px -1661px;"></span>
+                    <span class="sidebar-menu-item">
+                        Ngân sách
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -552px -1587px;"></span>
+                    <span class="sidebar-menu-item">
+                        Báo cáo
+                    </span>
+                </button>
+                <button class="sidebar-btn">
+                    <span class="sidebar-icon" style="background-position: -252px -1663px;"></span>
+                    <span class="sidebar-menu-item">
+                        Phân tích tài chính
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-wrapper">
+                <span class="shortened-sidebar-btn icon"></span>
+                <img class="logo" src="./assets/img/Logo_Module_TiengViet_White.66947422.svg" alt="">
+            </div>
+            <span class="submenu-item icon"></span>
+            <h3 class="company-name">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC</h3>
+            <span class="more-btn icon"></span>
+            <span class="noti-btn icon"></span>
+            <img src="./assets/img/avatar.png" alt="avatar" class="avatar">
+            <span class="username">Dương Khánh Tuân</span>
+            <span class="more-btn icon small"></span>
+        </div>
+
+        <!-- Container -->
+        <div class="container">
+            <section class="header-section">
+                <h3>Nhân viên</h3>
+                <button class="btn add-empl">
+                    Thêm nhân viên mới
+                </button>
+            </section>
+            <section class="content-section">
+                <div class="search-empl">
+                    <div class="search-box">
+                        <span class="search-icon"></span>
+                        <input class="text-input search-input" placeholder="Tìm theo mã, tên nhân viên" type="text">
+                    </div>
+                    <span title="Làm mới" class="reload-icon"></span>
+                </div>
+                <div class="table-container">
+                    <table class="table">
+                        <tr class="table-header">
+                            <th class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </th>
+                            <th>Mã nhân viên</th>
+                            <th>Tên nhân viên</th>
+                            <th>Giới tính</th>
+                            <th class="tb-center">Ngày sinh</th>
+                            <th title="Chứng minh nhân dân">Số CMND</th>
+                            <th>Chức danh</th>
+                            <th>Tên đơn vị</th>
+                            <th>Số tài khoản</th>
+                            <th>Tên ngân hàng</th>
+                            <th>Chi nhánh TK ngân hàng</th>
+                            <th class="edit-btn">Chức năng</th>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="check-col">
+                                <input class="checkbox" type="checkbox" name="check-all">
+                            </td>
+                            <td>9420</td>
+                            <td>Dương Khánh Tuân</td>
+                            <td>Nam</td>
+                            <td class="tb-center">07/10/2002</td>
+                            <td>123456789</td>
+                            <td>Fresher</td>
+                            <td>Misa</td>
+                            <td>123456789</td>
+                            <td>Vietcombank</td>
+                            <td>Hưng Yên</td>
+                            <td class="blue-color edit-btn">
+                                <div class="submenu-container">
+                                    Sửa
+                                    <span class="arrow-down-icon"></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <div class="total">Tổng số: <strong>5</strong> bản ghi</div>
+                    <div class="row-per-page">
+                        <span class="value">20 bản ghi trên 1 trang</span>
+                        <span class="icon triangle-down" ></span>
+                    </div>
+                    <div class="page-container">
+                        <span class="disable">Trước</span>
+                        <span class="page active">1</span>
+                        <span class="page">2</span>
+                        <span class="page">3</span>
+                        <span class="dots">...</span>
+                        <span class="page">52</span>
+                        <span>Sau</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-title-bar">
+                    <span title="Trợ giúp" class="help-btn"></span>
+                    <span title="Đóng" class="close-btn"></span>
+                </div>
+                <div class="modal-header">
+                    <h3>Thông tin nhân viên</h3>
+                    <input class="checkbox" id="is-customer" type="checkbox" name="role" value="0">
+                    <label for="is-customer">Là khách hàng</label>
+                    <input class="checkbox" type="checkbox" name="role" value="1">
+                    <label for="is-supplier">Là nhà cung cấp</label>
+                </div>
+                <div class="layout">
+                    <div class="row">
+                        <div class="col col-5">
+                            <div class="row pd-6">
+                                <div class="col col-4 ">
+                                    <div class="label">
+                                        <label class="label-name" for="">Mã</label>
+                                        <div class="required">*</div>
+                                    </div>
+                                    <input required class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-6 pd-6">
+                                    <div class="label">
+                                        <label class="label-name" for="">Tên</label>
+                                        <div class="required">*</div>
+                                    </div>
+                                    <input required class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="label">
+                                        <label class="label-name" for="">Đơn vị</label>
+                                        <div class="required">*</div>
+                                    </div>
+                                    <input required class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="label">
+                                        <label class="label-name" for="">Chức danh</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-5">
+                            <div class="row pd-6">
+                                <div class="col col-4">
+                                    <div class="label">
+                                        <label class="label-name" for="">Ngày sinh</label>
+                                    </div>
+                                    <input class="text-input" type="date" name="code">
+                                </div>
+                                <div class="col col-6">
+                                    <div class="label">
+                                        <label class="label-name" for="">Giới tính</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio" class="radio-input" name="sex" id="">
+                                        <label class="label-name">Nam</label>
+                                        <input type="radio" class="radio-input" name="sex" id="">
+                                        <label class="label-name">Nữ</label>
+                                        <input type="radio" class="radio-input" name="sex" id="">
+                                        <label class="label-name">Khác</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pd-6">
+                                <div class="col col-6">
+                                    <div class="label">
+                                        <label title="Số chứng minh nhân dân" class="label-name" for="">Số CMND</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="cmnd">
+                                </div>
+                                <div class="col col-4">
+                                    <div class="label">
+                                        <label class="label-name" for="">Ngày cấp</label>
+                                    </div>
+                                    <input class="text-input" type="date" name="code">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-10">
+                                    <div class="label">
+                                        <label class="label-name" for="">Nơi cấp</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-10">
+                            <div class="row pd-6">
+                                <div class="col col-10">
+                                    <div class="label">
+                                        <label class="label-name" for="">Địa chỉ</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">ĐT di động</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">ĐT cố định</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">Email</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                            <div class="row pd-6">
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">Tài khoản ngân hàng</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">Tên ngân hàng</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                                <div class="col col-25">
+                                    <div class="label">
+                                        <label class="label-name" for="">Chi nhánh</label>
+                                    </div>
+                                    <input class="text-input" type="text" name="code">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn outline">Hủy</button>
+                    <button class="btn outline">Cất</button>
+                    <button class="btn">Cất và Thêm</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Noti -->
+        <div class="modal hidden">
+            <div class="modal-content noti-modal">
+                <div class="noti-content">
+                    <span class="icon warning-icon"></span>
+                    Mã nhân viên 9420 đã tồn tại
+                </div>
+                <button class="btn noti-btn">Đồng ý</button>
+            </div>
+        </div>
+
+        <!-- Toast message -->
+        <div class="toast-container hidden">
+            <span class="toast-icon success icon"></span>
+            <h5 class="toast-title success">Thành công!&nbsp</h5>
+            <p class="toast-body-text">Công việc đã xóa.</p>
+            <span class="toast-action">Hoàn tác</span>
+            <span class="toast-close-icon icon"></span>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/list-page.js"></script>
+</body>
+
+</html>

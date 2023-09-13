@@ -1,0 +1,28 @@
+.btn {
+    height: var(--height-default);
+    min-width: 80px;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    border:none;
+    color: #fff;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-hover);
+}
+
+.btn:active {
+    background-color: var(--color-active);
+}
+
+.btn.btn-sub {
+    background-color: #fff;
+    color:#212121;
+    border: 1px solid #E6E6E6;
+}
+
+.btn-sub:hover {
+    background-color: #eee;
+}

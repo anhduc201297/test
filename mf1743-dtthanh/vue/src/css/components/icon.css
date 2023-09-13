@@ -1,0 +1,169 @@
+/* Icon-24 container */
+.icon-24 {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon {
+    background: url('@/assets/img/Sprites.64af8f61.svg') no-repeat;
+    cursor: pointer;
+}
+
+/* Icon sprite */
+
+.icon--dashboard {
+    background-position: -33px -1587px;
+    width: 18px;
+    height: 20px;
+}
+
+.icon--employee {
+    background-position: -165px -1664px;
+    width: 17px;
+	height: 17px;
+}
+
+.icon--cash {
+    background-position: -78px -1588px;
+    width: 14px;
+    height: 19px;
+}
+
+.icon--bank {
+    background-position: -121px -1590px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon--pu {
+    background-position: -165px -1589px;
+    width: 16px;
+    height: 18px;
+}
+
+.icon--sale {
+    background-position: -206px -1588px;
+    width: 20px;
+    height: 18px;
+}
+
+.icon--invoice {
+    background-position: -254px -1589px;
+    width: 14px;
+    height: 17px;
+}
+
+.icon--stock {
+    background-position: -294px -1589px;
+    width: 18px;
+    height: 17px;
+}
+
+.icon--tool {
+    background-position: -339px -1590px;
+    width: 18px;
+    height: 17px;
+}
+
+.icon--asset {
+    background-position: -382px -1589px;
+    width: 17px;
+    height: 18px;
+}
+
+.icon--salary {
+    background-position: -514px -1590px;
+    width: 15px;
+    height: 16px;
+}
+
+.icon--tax {
+    background-position: -427px -1591px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon--price {
+    background-position: -471px -1590px;
+    width: 17px;
+	height: 17px;
+}
+
+.icon--general {
+    background-position: -514px -1590px;
+    width: 15px;
+	height: 16px;
+}
+
+.icon--budget {
+    background-position: -427px -1664px;
+    width: 16px;
+	height: 16px;
+}
+
+.icon--report {
+    background-position: -552px -1593px;
+    width: 14px;
+	height: 13px;
+}
+
+.icon--finance {
+    background-position: -251px -1667px;
+    width: 17px;
+	height: 14px;
+}
+
+.icon--reload {
+    background-position: -1098px -90px;
+    width: 20px;
+    height: 21px;
+}
+
+.icon--excel {
+    background-position: -705px -257px;
+    width: 23px;
+    height: 22px;
+}
+
+.icon--close {
+    background-position: -147px -147px;
+    width: 18px;
+    height: 18px;
+}
+
+.icon--success {
+    background-position: -1602px -258px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon--warning {
+    background-position: -817px -145px;
+    width: 22px;
+    height: 23px;
+}
+
+.icon--error {
+    background-position: -762px -146px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon--info {
+    background-position: -482px -146px;
+    filter: hue-rotate(90deg);
+    width: 20px;
+    height: 20px;
+}
+
+.icon--trash {
+    background-position: -464px -313px;
+    width: 15px;
+    height: 15px;
+}

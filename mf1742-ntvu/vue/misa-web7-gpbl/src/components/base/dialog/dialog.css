@@ -1,0 +1,64 @@
+.dialog-wrapper {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+}
+.dialog-notify {
+    position: relative;
+    box-shadow: 0 4px 16px rgba(23, 27, 42, 0.24);
+    border-radius: var(--border-radius-default);
+    background-color: white;
+    padding: 24px 24px 0 24px;
+    max-height: 100vh;
+    width: 500px;
+    height: min-content;
+    margin: auto;
+    animation: show-in linear 0.1s;
+}
+.dialog-body {
+    margin-top: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.dialog-title {
+    font-family: m-semibold;
+    font-size: 16px;
+}
+.dialog-content {
+    font-size: 14px;
+    line-height: 18px;
+}
+.dialog-footer {
+    justify-content: space-between;
+}
+.dialog-footer--error,
+.dialog-footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-border);
+}
+.noti-icon {
+    background-repeat: no-repeat;
+    background-size: 48px;
+    background-position: center;
+    min-width: 60px;
+    display: inline-block;
+    height: 48px;
+}
+.btns-right,
+.btns-left {
+    display: flex;
+    gap: 16px;
+}
+.dialog-footer--error {
+    justify-content: center;
+}

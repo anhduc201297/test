@@ -1,0 +1,242 @@
+/* === Icon size === */
+.icon--36 {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.icon--24 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.icon--20 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.icon--8 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+}
+/*  */
+
+/* === Icon type ===  */
+.icon--button {
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+/*  */
+
+/* === Icons === */
+.icon--home {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -20px -680px;
+}
+
+.icon--general{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -20px -154px;
+}
+
+.icon--asset{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -64px -153px;
+}
+
+.icon--asset-2{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -109px -153px;
+}
+
+.icon--tool{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -152px -152px;
+}
+
+.icon--category{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -196px -152px;
+}
+
+.icon--search-menu {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -240px -152px;
+}
+
+.icon--report{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -328px -152px;
+}
+
+.icon--notification {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -328px -107px;
+}
+
+.icon--system {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -196px -20px;
+}
+
+.icon--support {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -64px -64px;
+}
+
+.icon__profile-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+.icon__profile-container:hover {
+    background-color: var( --color-hover);
+}
+.icon__profile-container:hover div{
+    filter: brightness(0) invert(1);
+}
+.icon--profile {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon--edit {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -154px -66px;
+}
+
+.icon--detail {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -242px -110px
+}
+
+.icon--search {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -240px -20px;;
+}
+
+.icon--filter {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -240px -65px;
+}
+
+.icon--plus {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -204px -424px;
+}
+
+.icon--excel {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -286px -110px;
+}
+
+.icon--delete {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -462px -110px;
+}
+
+/* icon chỉ hướng */
+.icon__caret-up-and-down {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.icon--caret-up {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -28px -338px;
+	width: 8px;
+	height: 5px;
+}
+
+.icon--caret-down {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position:-72px -338px;
+	width: 8px;
+	height: 5px;
+}
+
+.icon--angle-left {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -23px -245px;
+}
+
+.icon--angle-right {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -65px -245px;
+}
+
+.icon--angle-down {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -154px -243px;
+}
+
+.icon--angle-up {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -110px -243px;
+}
+
+.icon--arrow-from-right{
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position:-284px -416px;
+}
+/*  */
+
+.icon--close {
+    background-image: var(--icon-url);
+    background-repeat: no-repeat;
+    background-position: -366px -278px;;
+}
+.icon--calender{
+    background: var(--icon-url) no-repeat -287px -67px;
+    width: 18px;
+	height: 18px;
+}
+/* Icon tin nhắn */
+.icon--success{
+    background: var(--icon-url) no-repeat -71px -512px;
+	width: 11px;
+	height: 8px;
+}
+.icon--warning{
+    background: var(--icon-url) no-repeat -416px -66px;
+	width: 24px;
+	height: 20px;
+}

@@ -1,0 +1,23 @@
+.sidebar {
+  padding-top: 20px;
+}
+
+.sidebar__item {
+  height: 42px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  justify-content: start;
+  margin: 2px 0;
+  padding: 0px 12px;
+}
+
+.sidebar__item:hover {
+  background-color: #6e6b6b;
+}
+
+.sidebar__item:active {
+  background-color: #6e6b6b;
+}

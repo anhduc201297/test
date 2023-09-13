@@ -1,0 +1,129 @@
+:root {
+    --color-header-table: #e5e8ec;
+    --color-table-row-hover: #f2f9ff;
+    --height-row: 48px;
+    --color-row-selected: #e5f3ff;
+    --color-background-paging: #fff;
+}
+.container-table {
+    min-height: calc(100% - var(--height-row));
+}
+.m-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: unset;
+    border-spacing: unset;
+    border: none;
+    outline: none;
+}
+.m-table-header {
+    background-color: var(--color-header-table);
+    text-transform: uppercase;
+    font-family: m-semibold;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    outline: inherit;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.m-table-not-outline {
+    border-collapse: collapse;
+}
+.m-table td,
+th {
+    height: var(--height-row);
+    border-right: 1px var(--color-border);
+    border-right-style: dashed;
+    border-bottom: 1px solid var(--color-border);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.m-table td {
+    font-size: 14px;
+    color: var(--text-color);
+}
+.m-table .action-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.m-table td .action-edit {
+    color: var(--color-blue-500);
+    font-family: m-bold;
+}
+
+.m-table tbody tr.selected td,
+.m-table tbody tr.selected td.sticky {
+    background-color: var(--color-row-selected);
+}
+.m-table tbody tr:hover td,
+.m-table tbody tr:hover td.sticky {
+    background-color: var(--color-table-row-hover);
+    z-index: 19;
+}
+
+.m-table td.sticky {
+    position: sticky;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.m-table .m-table-header th.sticky {
+    position: sticky;
+    z-index: 3;
+    background-color: var(--color-header-table);
+}
+
+.m-table td.sticky.r-0,
+th.sticky.r-0 {
+    border-left: 1px dashed var(--color-border);
+    border-right: none;
+}
+.r-0 {
+    right: 0px;
+}
+.l-0 {
+    left: 0px;
+}
+
+/* Pagination */
+.table-paging {
+    position: sticky;
+    z-index: 10;
+    min-width: 640px;
+    left: 0;
+    bottom: 0;
+    height: var(--height-row);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    color: var(--text-color);
+    background-color: var(--color-background-paging);
+}
+.table-pagination-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.table-page-num-selected {
+    border: 1px solid var(--color-border);
+    font-family: m-bold;
+    box-sizing: content-box;
+}
+.table-list-pages {
+    display: flex;
+}

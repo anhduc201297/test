@@ -1,0 +1,223 @@
+@import url(/asset/img/Sprites.64af8f61.svg);
+@import url(/asset/img/Logo_Module_TiengViet_White.66947422.svg);
+
+.icon{
+    width: 24px;
+    height: 24px;
+    background: var(--url-icon) no-repeat;
+    margin-right: 12px;
+
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.icon-grid{
+    
+	width: 24px;
+	height: 24px;
+    margin-right: 8px;
+    background-position: -424px -86px; 
+}
+
+.logo{
+    background: url('/asset/img/Logo_Module_TiengViet_White.66947422.svg') no-repeat;
+    width: 108px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.icon-three-stripes{
+    margin: 0 10px;
+    background-position: -843px -30px;
+}
+
+.icon-v-down{
+    background-position: -1076px -32px;
+    width: 14px;
+    height: 14px;
+}
+
+.icon-avatar{
+    background-position: -352px -894px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.icon-bell{
+    background-position: -788px -30px;
+    margin-right: 36px;
+}
+
+.icon-refresh{
+    background-position: -423px -201px;
+    margin: 0 6px;
+}
+.help-icon{
+    background-position: -89px -144px;
+	width: 24px;
+	height: 24px;
+    margin-right: 6px;
+}
+
+
+.close-icon{
+    background-position: -144px -144px;
+	width: 24px;
+	height: 24px;
+}
+
+
+.icon-search{
+    background: url('/asset/icon/search.png') no-repeat;
+	background-position: right 8px center;
+    padding: 0 36px 8px center;
+}
+
+.icon-dashboard{
+    background-position: -30px -1628px; 
+}
+li:hover .icon-dashboard{
+    background-position: -30px -1585px;
+}
+
+.icon-cash{
+    background-position: -73px -1628px;
+}
+li:hover .icon-cash{
+    background-position: -73px -1585px;
+}
+
+.icon-bank{
+    background-position: -117px -1628px;
+}
+li:hover .icon-bank{
+    background-position: -117px -1585px;
+}
+
+.icon-bag{
+    background-position: -161px -1628px;
+}
+li:hover .icon-bag{
+    background-position: -161px -1585px;
+}
+
+.icon-sale{
+    background-position: -204px -1628px;
+}
+li:hover .icon-sale{
+    background-position: -204px -1585px;
+}
+
+.icon-invoice{
+    background-position: -249px -1628px;
+}
+li:hover .icon-invoice{
+    background-position: -249px -1585px;
+}
+
+.icon-stock{
+    background-position: -291px -1628px;
+}
+li:hover .icon-stock{
+    background-position: -291px -1585px;
+}
+
+.icon-tool{
+    background-position: -336px -1628px;
+}
+li:hover .icon-tool{
+    background-position: -336px -1585px;
+}
+
+.icon-asset{
+    background-position: -378px -1628px;
+}
+li:hover .icon-asset{
+    background-position: -378px -1585px;
+}
+
+.icon-tax{
+    background-position: -423px -1630px;
+}
+li:hover .icon-tax{
+    background-position: -423px -1587px;
+}
+
+.icon-price{
+    background-position: -467px -1628px;
+}
+li:hover .icon-price{
+    background-position: -467px -1585px;
+}
+
+.icon-general{
+    background-position: -510px -1628px;
+}
+li:hover .icon-general{
+    background-position: -510px -1585px;
+}
+
+.icon-budget{
+    background-position: -378px -1659px;
+}
+li:hover .icon-budget{
+    background-position: -423px -1659px;
+}
+
+.icon-report{
+    background-position: -547px -1628px;
+}
+li:hover .icon-report{
+    background-position: -547px -1585px;
+}
+
+.icon-finance{
+    background-position: -204px -1664px;
+}
+li:hover .icon-finance{
+    background-position: -248px -1664px;
+}
+
+.icon-triangle-down{
+    background: var(--url-icon) no-repeat;
+    background-position: -897px -359px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.icon-arrow-select{
+    background-position: -560px -359px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-question{
+    background-position: -826px -456px;
+    width: 48px;
+    height: 48px;
+}
+
+.icon-success{
+    background-position: -1600px -256px;
+    margin-right: 8px;
+}
+
+.icon-error{
+    background-position: -536px -144px;
+    margin-right: 8px;
+}
+
+.icon-warning{
+    background-position: -592px -144px ;
+    margin-right: 8px;
+}
+
+.icon-info{
+    background-position: -1600px -256px;
+    margin-right: 8px;
+}

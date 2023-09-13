@@ -1,0 +1,218 @@
+/* ----------PRIMARY BUTTON---------- */
+.btn-pri-s,
+.btn-pri-m,
+.btn-pri-l {
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: var(--element-color-blue-primary);
+    color: var(--text-color-white-title);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-pri-s {
+    height: 32px;
+}
+
+.btn-pri-l {
+    height: 48px;
+}
+
+.btn-pri-s:hover,
+.btn-pri-m:hover,
+.btn-pri-l:hover {
+    background-color: var(--element-color-blue-hover-bold);
+}
+
+.btn-pri-s:focus-visible, 
+.btn-pri-s:active ,
+.btn-pri-m:focus-visible, 
+.btn-pri-m:active ,
+.btn-pri-l:focus-visible, 
+.btn-pri-l:active {
+    background-color: var(--element-color-blue-focus);
+    scale: 0.98;
+}
+
+/* ----------EXTRA BUTTON---------- */
+.btn-extra-s,
+.btn-extra-m,
+.btn-extra-l {
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: var(--background-color-white);
+    border: 1px solid var(--border-color-grey);
+    color: var(--text-color-black-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-extra-s {
+    height: 32px;
+}
+
+.btn-extra-l {
+    height: 32px;
+}
+
+.btn-extra-s:hover,
+.btn-extra-m:hover,
+.btn-extra-l:hover{
+    background-color: var(--background-color-grey-hover);
+}
+
+.btn-extra-s:focus-visible, 
+.btn-extra-s:active,
+.btn-extra-m:focus-visible, 
+.btn-extra-m:active,
+.btn-extra-l:focus-visible, 
+.btn-extra-l:active {
+    background-color: var(--background-color-grey-focus);
+    scale: 0.98;
+}
+
+/* ----------ICON-TEXT BUTTON---------- */
+.btn-icon-text {
+    padding-left: 32px;
+}
+
+/* ----------ICON BUTTON---------- */
+.btn-icon-s,
+.btn-icon-m,
+.btn-icon-l {
+    border-radius: 4px;
+    width: unset; /* set in separate css */
+    height: unset; /* set in separate css */
+    padding: 0;
+    background-color: var(--element-color-blue-primary);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-icon-s {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-icon-m {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-icon-l {
+    width: 40px;
+    height: 40px;
+}
+
+.transparent ,
+.transparent:hover {
+    background-color: unset;
+}
+
+/* ----------LINK BUTTON---------- */
+.btn-link-s,
+.btn-link-m,
+.btn-link-l {
+    color: var(--element-color-blue-primary);
+    min-width: unset;
+    height: 36px;
+    padding: 0 8px;
+    background-color: unset;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-link-s:hover,
+.btn-link-m:hover,
+.btn-link-l:hover {
+    background-color: unset;
+}
+
+.btn-link-s {
+    height: 28px;
+}
+
+/* ----------ERROR BUTTON---------- */
+.btn-error-s,
+.btn-error-m,
+.btn-error-l {
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: var(--element-color-red);
+    color: var(--text-color-white-title);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-error-s {
+    height: 32px;
+}
+
+.btn-error-l {
+    height: 48px;
+}
+
+.btn-error-s:hover,
+.btn-error-m:hover,
+.btn-error-l:hover {
+    background-color: var(--element-color-red-hover);
+}
+
+.btn-error-s:focus-visible, 
+.btn-error-s:active ,
+.btn-error-m:focus-visible, 
+.btn-error-m:active ,
+.btn-error-l:focus-visible, 
+.btn-error-l:active {
+    background-color: var(--element-color-red-focus);
+    scale: 0.98;
+}
+
+/* ----------COMBO BUTTON (icon + text + select)---------- */
+.btn-combo {
+
+}
+
+/* ----------SELECT BUTTON---------- */
+.btn-select {
+
+}
+
+/* ----------CONTEXT MENU ITEM BUTTON---------- */
+.btn-context__item {
+    border: none;
+    background-color: unset;
+    width: 100%;
+}
+
+/* ----------COMBO BOX---------- */
+.combo-box-s {
+    position: relative;
+    display: flex;
+    height: 28px;
+}
+
+/* ----------BUTTON DANGEROUS---------- */
+.btn-dangerous {
+    color: var(--text-color-white-title);
+    background-color: #DE3617;
+}
+
+.btn-dangerous:hover {
+    background-color: #dd452a;
+}
+
+.btn-dangerous:focus-visible,
+.btn-dangerous:active {
+    background-color: #801907;
+}

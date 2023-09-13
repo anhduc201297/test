@@ -1,0 +1,250 @@
+.icon {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.icon-dashboard {
+    background-position: -33px -1630px;
+    width: 18px;
+	height: 20px;
+}
+.sidebar-item:hover .icon-dashboard{
+    background-position: -33px -1587px;
+    width: 18px;
+	height: 20px;
+}
+
+.icon-cash {
+    background-position: -78px -1631px;
+	width: 14px;
+	height: 18px;
+}
+
+.sidebar-item:hover .icon-cash{
+    background-position: -78px -1588px;
+	width: 14px;
+	height: 18px;
+}
+
+.icon-bank {
+    background-position: -121px -1633px;
+	width: 16px;
+	height: 16px;
+}
+
+.sidebar-item:hover .icon-bank{
+    background-position: -121px -1590px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-buy {
+    background-position: -165px -1632px;
+	width: 16px;
+	height: 18px;
+}
+
+.sidebar-item:hover .icon-buy{
+    background-position: -165px -1589px;
+	width: 16px;
+	height: 18px;
+}
+
+.icon-sale {
+    background-position: -206px -1631px;
+	width: 20px;
+	height: 14px;
+}
+
+.sidebar-item:hover .icon-sale{
+    background-position: -206px -1588px;
+	width: 20px;
+	height: 14px;
+}
+
+.icon-invoice {
+    background-position: -254px -1632px;
+	width: 14px;
+	height: 17px;
+}
+
+.sidebar-item:hover .icon-invoice{
+    background-position: -254px -1589px;
+	width: 14px;
+	height: 17px;
+}
+
+.icon-stock {
+    background-position: -294px -1632px;
+	width: 18px;
+	height: 17px;
+}
+
+.sidebar-item:hover .icon-stock{
+    background-position: -294px -1589px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon-tools {
+    background-position: -339px -1633px;
+	width: 18px;
+	height: 17px;
+}
+
+.sidebar-item:hover .icon-tools{
+    background-position: -339px -1590px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon-fixed-assets {
+    background-position: -382px -1632px;
+	width: 17px;
+	height: 18px;
+}
+
+.sidebar-item:hover .icon-fixed-assets{
+    background-position: -382px -1589px;
+	width: 17px;
+	height: 18px;
+}
+
+.icon-tax {
+    background-position: -427px -1634px;
+	width: 16px;
+	height: 16px;
+}
+
+.sidebar-item:hover .icon-tax{
+    background-position: 427px -1591px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-price {
+    background-position: -470px -1633px;
+	width: 18px;
+	height: 17px;
+}
+
+.sidebar-item:hover .icon-price{
+    background-position: -470px -1590px;
+	width: 18px;
+	height: 17px;
+}
+
+.icon-general {
+    background-position: -514px -1632px;
+	width: 16px;
+	height: 18px;
+}
+
+.sidebar-item:hover .icon-general{
+    background-position: -514px -1590px;
+	width: 15px;
+	height: 16px;
+}
+
+.icon-budget {
+    background-position: -382px -1664px;
+	width: 16px;
+	height: 16px;
+}
+
+.sidebar-item:hover .icon-budget{
+    background-position: -427px -1664px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-report {
+    background-position: -552px -1636px;
+	width: 14px;
+	height: 13px;
+}
+
+.sidebar-item:hover .icon-report{
+    background-position: -552px -1593px;
+	width: 14px;
+	height: 13px;
+}
+
+.icon-finance {
+    background-position: -207px -1667px;
+	width: 17px;
+	height: 14px;
+}
+
+.sidebar-item:hover .icon-finance{
+    background-position: -251px -1667px;
+	width: 17px;
+	height: 14px;
+}
+
+.option-icon{
+    background-position: -1157px -32px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-search {
+	background-position: -992px -360px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-arrow-left {
+	background-position: -36px -361px;
+	width: 8px;
+	height: 14px;
+}
+
+.icon-arrow-right {
+	background-position: -84px -361px;
+	width: 8px;
+	height: 14px;
+}
+
+.icon-arrow-down {
+	background-position: -1129px -365px;
+	width: 14px;
+	height: 8px;
+}
+
+.icon-close{
+	background-position: -1177px -362px;
+	width: 13px;
+	height: 12px;
+}
+
+.icon-refresh {
+	background-position: -424px -201px;
+	width: 22px;
+	height: 23px;
+}
+
+.icon-edit {
+	background-position: -1658px -90px;
+	width: 21px;
+	height: 20px;
+}
+
+.icon-more {
+	background-position: -568px -30px;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-copy {
+	background-position: -1546px -89px;
+	width: 21px;
+	height: 21px;
+}
+
+.icon-delete {
+	background-position:  -147px -147px;
+	width: 18px;
+	height: 18px;
+}

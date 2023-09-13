@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form details</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="container-ms-popup">
+      <div class="ms-popup-background"></div>
+      <div class="ms-popup---content">
+        <span
+          class="popup-shortkey"
+          shortkey="Close|Save|SaveAndAdd|Help|Print|DeleteCacheAdvance"
+        ></span>
+        <header class="ms-popup--header">
+          <div class="ms-popup--title">
+            <div class="title-popup">Thông tin nhân viên</div>
+            <div class="m-form-checkbox">
+              <label for="khachhang">Là khách hàng</label>
+              <input
+                type="checkbox"
+                class="m-checkbox-24"
+                name="khachhang"
+                id=""
+              />
+            </div>
+            <div class="m-form-checkbox">
+              <label for="nhacungcap">Là nhà cung cấp</label>
+              <input
+                type="checkbox"
+                class="m-checkbox-24"
+                name="nhacungcap"
+                id=""
+              />
+            </div>
+          </div>
+          <div class="ms-popup-close">
+            <div
+              class="mi mi-24 mi-help"
+              shortkey-target=""
+              id="btn-popup-help"
+            ></div>
+            <div
+              class="mi mi-24 mi-close"
+              shortkey-target=""
+              id="btn-popup-close"
+            ></div>
+          </div>
+        </header>
+        <main class="ms-popup-content">
+          <div class="popup-content scroller">
+            <div class="basic-info">
+              <div class="basic-info-left">
+                <div class="flex-row">
+                  <div class="m-textfield" id="m-tf-ma" style="width: 48%;">
+                    <label for="staff-id"
+                      >Mã <b style="color: red">&nbsp;*</b></label
+                    >
+                    <input type="text" id="staff-id" placeholder="" />
+                    <span class="tf-danger">Mã không được để trống</span>
+                  </div>
+                  <div class="m-textfield" id="m-tf-ten" style="width: 48%;">
+                    <label for="staff-name"
+                      >Tên <b style="color: red">&nbsp;*</b></label
+                    >
+                    <input type="text" id="staff-name" placeholder="" />
+                    <span class="tf-danger">Tên không được để trống</span>
+                  </div>
+                </div>
+
+                <div id="m-cbo-donvi" class="m-combobox" style="width: 100%">
+                  <label for="staff-donvi"
+                    >Đơn vị <b style="color: red">&nbsp;*</b></label
+                  >
+                  <div class="m-combobox-content">
+                    <input
+                      type="text"
+                      id="staff-donvi"
+                      placeholder=""
+                      onkeyup="filterComboboxFunction()"
+                      style="width: calc(100% - 40px)"
+                    />
+                    <a id="cbo_btn_donvi"
+                      ><div class="mi mi-16 mi-arrow-dropdown"></div
+                    ></a>
+                  </div>
+                  <div class="m-combobox-dropdown" id="cbo_ddl_donvi">
+                    <div class="scroller">
+                      <a class="selected" href="#hn"
+                        >Hà Nội
+                        <div class="mi mi-24 mi-tick"></div
+                      ></a>
+                      <a href="#hcm">TP. Hồ Chí Minh</a>
+                      <a href="#hp">Hải Phòng</a>
+                      <a href="#hd">Hải Dương</a>
+                    </div>
+                  </div>
+                  <span class="m-combobox-danger"
+                    >&lt;Tên trường&gt; không được để trống</span
+                  >
+                </div>
+
+                <div class="m-textfield" style="padding-top: 8px">
+                  <label for="staff-chuc-danh">Chức danh</label>
+                  <input type="text" id="staff-chuc-danh" placeholder="" />
+                </div>
+              </div>
+              <div class="basic-info-right">
+                <div class="flex-row">
+                  <div class="m-textfield" style="width: 33%">
+                    <label for="staff-ngay-sinh">Ngày sinh</label>
+                    <input type="date" id="staff-ngay-sinh" placeholder="" />
+                    <!-- <a href="#"><div class="mi mi-24 mi-calendar"></div></a> -->
+                  </div>
+
+
+                  <div id="m-rdo-gioitinh" class="m-rdo" style="width: 66%; padding-left: 8px;">
+                    <label>Giới tính</label>
+                    <div class="m-rdo-content">
+                      <div class="item m-rdo-selected">
+                        <a><span></span></a>
+                        <label>Nam</label>
+                      </div>
+                      <div class="item">
+                        <a><span></span></a>
+                        <label>Nữ</label>
+                      </div>
+                      <div class="item">
+                        <a><span></span></a>
+                        <label>Khác</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="flex-row">
+                  <div class="m-textfield" style="width: 48%">
+                    <label for="staff-CMND" title="Số chứng minh nhân dân"
+                      >Số CMND</label
+                    >
+                    <input type="text" placeholder="" id="staff-CMND" />
+                  </div>
+                  <div class="m-textfield" style="width: 48%">
+                    <label for="staff-ngay-cap">Ngày cấp</label>
+                    <input type="date" id="staff-ngay-cap" placeholder="" />
+                    <!-- <a href="#"><div class="mi mi-24 mi-calendar"></div></a> -->
+                  </div>
+                </div>
+                <div class="m-textfield" >
+                  <label for="staff-noi-cap">Nơi cấp</label>
+                  <input type="text" id="staff-noi-cap" placeholder="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <div class="m-textfield" style="padding-top: 8px">
+                <label for="staff-dia-chi">Địa chỉ</label>
+                <input type="text" id="staff-dia-chi" placeholder="" />
+              </div>
+
+              <div class="flex-row flex-left" >
+                <div class="m-textfield" style="padding-top: 8px">
+                  <label for="staff-phone" title="Điện thoại di động"
+                    >ĐT di động</label
+                  >
+                  <input type="text" id="staff-phone" placeholder="" />
+                </div>
+                <div class="m-textfield" style="padding-top: 8px; padding-left: 8px;">
+                  <label for="staff-landline" title="Điện thoại cố định"
+                    >ĐT cố định</label
+                  >
+                  <input type="text" id="staff-landline" placeholder="" />
+                </div>
+                <div class="m-textfield" style="padding-top: 8px; padding-left: 8px;">
+                  <label for="staff-email">Email</label>
+                  <input type="text" id="staff-email" placeholder="" />
+                </div>
+              </div>
+
+              <div class="flex-row  flex-left">
+                <div class="m-textfield" style="padding-top: 8px">
+                  <label for="staff-bank-account">Tài khoản ngân hàng</label>
+                  <input type="text" id="staff-bank-account" placeholder="" />
+                </div>
+                <div class="m-textfield" style="padding-top: 8px; padding-left: 8px;">
+                  <label for="staff-bank-name">Tên ngân hàng</label>
+                  <input type="text" id="staff-bank-name" placeholder="" />
+                </div>
+                <div class="m-textfield" style="padding-top: 8px; padding-left: 8px;">
+                  <label for="staff-bank-branch">Chi nhánh</label>
+                  <input type="text" id="staff-bank-branch" placeholder="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="controll flex-row">
+            <div class="left">
+              <button type="button" class="m-btn m-btn-secondary">Hủy</button>
+            </div>
+            <div class="right">
+              <button type="button" class="m-btn m-btn-secondary">Cất</button>
+              <button type="button" class="m-btn">Cất và Thêm</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

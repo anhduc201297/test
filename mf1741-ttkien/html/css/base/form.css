@@ -1,0 +1,161 @@
+.form-view {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.form-view .form-window {
+    width: 900px;
+    height: 650px;
+    padding: 12px;
+    padding-left: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.form-window .form-header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 50px;
+}
+
+.form-header .form-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.form-header .is-employee, .form-header .is-supplier {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.form-header .is-employee label, .form-header .is-supplier label {
+    margin-left: 10px;
+}
+
+.form-body .group-1_col-1, .form-body .group-1_col-2 {
+    width: 50%;
+    padding-right: 26px;
+}
+
+.group-1_col-1 .emp-code {
+    width: 160px;
+}
+
+.group-1_col-1 .emp-name {
+    width: calc(100% - 160px);
+    margin-left: 10px;
+}
+
+.group-1_col-1 .emp-unit, .emp-title {
+    margin-top: 12px;
+}
+
+.group-1_col-2 .emp-gender {
+    width: calc(100% - 160px);
+    margin-left: 10px;
+}
+
+.group-1_col-2 .emp-gender .box-gender-select {
+    display: flex;
+    height: 36px;
+    align-items: center;
+}
+
+.group-1_col-2 .emp-gender .gender-select {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+.group-1_col-2 .box-id-card {
+    display: flex;
+    margin-top: 12px;
+}
+
+.group-1_col-2 .emp-id {
+    width: calc(100% - 160px);
+    margin-right: 10px;
+}
+
+.group-1_col-2 .emp-id-place {
+    margin-top: 12px;
+}
+
+.group-2 {
+    padding-right: 26px;
+    margin-top: 40px;
+}
+
+.group-3 {
+    display: flex;
+    margin-top: 12px;
+}
+
+.group-3 .emp-mobile-phone, .emp-landline-phone, .emp-email {
+    width: 210px;
+    margin-right: 10px;
+}
+
+.group-4 {
+    display: flex;
+    margin: 12px 0;
+}
+
+.group-4 .emp-bank-account, .emp-bank-name, .emp-bank-branch {
+    width: 210px;
+    margin-right: 10px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 26px;
+}
+
+.notif-view {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.notif-view .notif-window {
+    width: 400px;
+    height: 190px;
+    padding: 28px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.notif-window .notif-title {
+    display: flex;
+}
+
+.notif-window .notif-title .notif-content {
+    font-size: 12px;
+    height: 37px;
+    padding-top: 8px;
+}
+
+.notif-window .btn-agree {
+    float: right;
+}

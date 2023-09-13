@@ -1,0 +1,34 @@
+.label {
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.label-name {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+
+.required {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: red;
+    padding-left: 2px;
+}
+
+.text-input {
+    height: 36px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    outline: none;
+    border: 1px solid var(--outline);
+    border-radius: 2px;
+    width: 100%;
+}
+
+.text-input:focus {
+    border-color: var(--button-color);
+}

@@ -1,0 +1,45 @@
+/* Toast */
+.toast-container {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 999;
+}
+
+.toast+.toast {
+    margin-top: 10px;
+}
+
+.toast {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 16px;
+    border-radius: 4px;
+    max-width: 450px;
+    min-width: 400px;
+    box-shadow: 0 0 10px #dedede;
+    position: relative;
+}
+
+.toast-title {
+    color: #2ca01c;
+    font-weight: 600;
+}
+
+.toast-icon {
+    flex: 0 0 24px;
+}
+
+.toast-button {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+}
+
+.toast-icon--close {
+    background: url(@/assets/img/Sprites.64af8f61.svg) no-repeat -1175px -359px;
+	width: 18px;
+	height: 18px;
+}

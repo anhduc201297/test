@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/asset/favicon.ico" type="image/x-icon">
+</head>
+
+<style>
+   .d-combobox{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+   }
+
+   .combobox-input{
+    height: 36px;
+    display: flex;
+    position: relative;
+    
+   }
+   .combobox-input input:focus{
+    border: 1px solid var(--color-primary);
+   }
+
+   .combobox-input input{
+    width: 100%;
+    padding: 0 12px;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+   }
+
+   .d-combobox .icon{
+    transform: translate(60%,55%)
+   }
+
+   .btn-dropdown{
+    position: absolute;
+    height: 34px;
+    width: 36px;
+    right: 1px;
+    top: 1px;
+   }
+
+   .btn-dropdown:hover{
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+   }
+
+   .options{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background-color: #ffffff ;
+    margin-top: 4px;
+   }
+
+   .option{
+    width: auto;
+    height: 36px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+   }
+   .option:hover{
+    background-color: #EEEEEE;
+    color: #39AC66;
+   }
+</style>
+
+<body style="margin: 20px;">
+
+    <div class="d-combobox">
+        <div class="combobox-input">
+            <input type="text" >
+            <div class="btn-dropdown">
+                <div class="icon icon-arrow-select"></div>
+            </div>
+            
+        </div>
+        <div class="options">
+            <div class="option">cdddc</div>
+            <div class="option">ddcdc</div>
+            <div class="option">cdcdcd</div>
+            <div class="option">cdcdcd</div>
+        </div>
+    </div>
+    <script>
+      
+    </script>
+</body>
+
+</html>

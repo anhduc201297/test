@@ -1,0 +1,147 @@
+/*
+    html mẫu cho combobox:
+    - hover: combobox hover khi thêm class .m-combobox-hover như sau: div class=" m-combobox m-combobox-hover "
+    - active: combobox active khi thêm class .m-combobox-active như sau: div class=" m-combobox m-combobox-active "
+    - error: combobox error khi thêm class .m-combobox-error như sau: div class=" m-combobox m-combobox-error "
+    - show: m-combobox-dropdown hiển thị khi thêm class .show như sau: div class="m-combobox-dropdown show"
+    - Cập nhật selected bằng cách thêm class .selected như sau: a class="selected" và thêm cả icon như bên dưới.
+    - Thêm class .m-combobox-dropdown-up để dropdownlist hiển thị lên phía trên.
+
+    * Lưu ý: đặt các id đúng như mẫu, để js chạy đúng. Gọi funtion myfunc('donvi').
+
+    <div id="m-cbo-donvi" class="m-combobox" style="width: 100%">
+        <label for="staff-id">Mã <b style="color: red">&nbsp;*</b></label>
+        <div class="m-combobox-content">
+            <input
+             type="text"
+             id="staff-id"
+             name="staff-id"
+             placeholder=""
+             onkeyup="filterComboboxFunction()"
+             style="width: calc(100% - 40px)"
+            />
+            <a id="cbo_btn_donvi"><div class="mi mi-16 mi-arrow-dropdown"></div></a>
+        </div>
+        <div class="m-combobox-dropdown m-combobox-dropdown-up" id="cbo_ddl_donvi">
+            <div class="scroller">
+                <a class="selected" href="#hn">Hà Nội <div class="mi mi-24 mi-tick"></div></a>
+                <a href="#hcm">TP. Hồ Chí Minh</a>
+                <a href="#hp">Hải Phòng</a>
+                <a href="#hd">Hải Dương</a>
+            </div>
+        </div>
+        <span class="m-combobox-danger">&lt;Tên trường&gt; không được để trống</span>
+    </div>
+
+    * Chú ý: Điều chỉnh lại các id cho phù hợp để không bị trùng id.
+*/
+.m-combobox {
+  position: relative;
+}
+
+.m-combobox label {
+  /* font-family: Roboto; */
+  height: var(--rounded-button-height); /* zero  36px*/
+  color: #1f1f1f;
+}
+
+.m-combobox .m-combobox-content {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background-color: #fff;
+  border-color: #e6e6e6;
+}
+
+.m-combobox .m-combobox-content input {
+  display: block;
+  width: 100%;
+  height: var(--rounded-button-height); /* zero */
+  height: 36px;
+  border-top-left-radius: var(--border-radius-default);
+  border-bottom-left-radius: var(--border-radius-default);
+  background-color: transparent;
+  border: solid 1px #e6e6e6;
+  padding: 0 12px;
+}
+
+.m-combobox .m-combobox-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 40px;
+  padding: 0 12px;
+  border: solid 1px #e6e6e6;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* combobox hover */
+.m-combobox-hover .m-combobox-content {
+  background-color: #f6f6f6 !important; /* zero */
+}
+
+/* combobox active bằng class .m-combobox-active */
+.m-combobox-active .m-combobox-content input
+{
+  border-top-color: #50b83c !important; /* zero */
+  border-left-color: #50b83c !important;
+  border-bottom-color: #50b83c !important;
+}
+.m-combobox-active .m-combobox-content a {
+  border-top-color: #50b83c !important; /* zero */
+  border-right-color: #50b83c !important;
+  border-bottom-color: #50b83c !important;
+}
+
+.m-combobox .m-combobox-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 308px; /* zero */
+  overflow-y: auto;
+  padding: 8px; /* zero */
+}
+
+.m-combobox-dropdown-up {
+  bottom: calc(36px + 8px); /* zero */
+}
+
+.m-combobox .m-combobox-dropdown.show {
+  display: block !important;
+  z-index: 100;
+  background-color: #FFF;
+  box-shadow: 0 4px 16px rgba(23,27,42,0.24);
+  border-radius: var(--border-radius-default);
+}
+
+.m-combobox .m-combobox-dropdown a {
+  display: flex;
+  height: var(--rounded-button-height); /* zero  36px*/
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px; /* zero */
+}
+
+.m-combobox .m-combobox-dropdown a:hover {
+  background-color: rgba(80, 184, 60, 0.1); /* zero */
+}
+
+.m-combobox .m-combobox-dropdown a.selected {
+  color: #50b83c; /* zero */
+  /* Ngoài ra, phải thêm icon .mi-tick vào trong thẻ a.selected qua DOM */
+}
+
+.m-combobox .m-combobox-danger {
+  display: none;
+  color: red; /* zero */
+}
+
+.m-combobox-error .m-combobox-danger {
+  display: block !important;
+}

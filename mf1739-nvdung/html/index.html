@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nhân viên</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="menu-container">
+      <div class="logo-container">
+        <a href="#" class="menu-container-options mi mi-16 mi-app"></a>
+        <a href="#" class="logo"
+          ><img
+            src="../../../assets/img/Logo_Module_TiengViet_White.66947422.svg"
+            alt="Logo phần mềm"
+        /></a>
+      </div>
+
+      <div class="menu-bar">
+        <div class="menu-item-list scroller">
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-dashboard"></div>
+              </div>
+              <div class="menu-item__title">Tổng quan</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-cash"></div>
+              </div>
+              <div class="menu-item__title">Tiền mặt</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-bank"></div>
+              </div>
+              <div class="menu-item__title">Tiền gửi</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-pu"></div>
+              </div>
+              <div class="menu-item__title">Mua hàng</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-sale"></div>
+              </div>
+              <div class="menu-item__title">Bán hàng</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-invoice"></div>
+              </div>
+              <div class="menu-item__title">Quản lý hóa đơn</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-stock"></div>
+              </div>
+              <div class="menu-item__title">Kho</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-tools"></div>
+              </div>
+              <div class="menu-item__title">Công cụ dụng cụ</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-fixed-asets"></div>
+              </div>
+              <div class="menu-item__title">Tài sản cố định</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-tax"></div>
+              </div>
+              <div class="menu-item__title">Thuế</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-price"></div>
+              </div>
+              <div class="menu-item__title">Giá thành</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-general"></div>
+              </div>
+              <div class="menu-item__title">Tổng hợp</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-budget"></div>
+              </div>
+              <div class="menu-item__title">Ngân sách</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-report"></div>
+              </div>
+              <div class="menu-item__title">Báo cáo</div></a
+            >
+          </div>
+          <div class="parent-item-menu">
+            <a href="#" class="menu-item"
+              ><div class="menu-item__icon">
+                <div class="mi mi-24 mi-sidebar-finance"></div>
+              </div>
+              <div class="menu-item__title">Phân tích tài chính</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="header">
+        <div class="header-left">
+          <div class="header-icon mi mi-24 mi-three-stripes pointer"></div>
+          <div
+            class="header-branch"
+            title="CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC"
+          >
+            <div class="con-ms-tooltip">
+              <!-- Thẻ hiện tooltip -->
+              <div class="msTooltipParent"></div>
+              <div class="header-branch-name">
+                CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚC
+              </div>
+            </div>
+            <a href="#" class="flex items-center">
+              <div
+                class="header-icon mi mi-24 mi-chevron-right header-branch-icon"
+              ></div>
+            </a>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="notify">
+            <div
+              class="con-ms-tooltip header-menu-icon header-menu-icon-notify"
+            ></div>
+            <div class="msTooltipParent"></div>
+            <div class="tooltip-content">
+              <div class="pointer header-icon">
+                <div class="wrap-notify header-menu-icon-simple">
+                  <div class="mi mi-24 mi-bell__nav wiggle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="account-info">
+            <a>
+              <div class="ms-button-text">
+                <div class="user-ava">
+                  <div class="mi mi-32 mi-user-avatar avatar">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="user-name">
+                <div class="pr-6 display-user">Nguyễn Văn Mạnh</div>
+              </div>
+              <div class="mi mi-14 mi-chev-ron-down header-branch-icon"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="main-content-top">
+          <div class="main-content-title">Nhân viên</div>
+          <button type="button" class="m-btn">Thêm mới nhân viên</button>
+        </div>
+        <div class="contents-layout">
+          <div class="grid-list-data">
+            <div class="m-textfield m-textfield-icon-action">
+              <input type="text" placeholder="Tìm theo mã, tên nhân viên" />
+              <a href="#"><div class="mi mi-24 mi-search"></div></a>
+            </div>
+            <a class="m-btn-icon">
+              <div class="mi mi-24 mi-refresh"></div>
+            </a>
+          </div>
+          <div class="grid-model-control">
+            <div class="ms-grid-viewer scroller table-scroll">
+              <table class="ms-table-viewer">
+                <thead>
+                  <tr>
+                    <th class="width-col-1">
+                      <input
+                        type="checkbox"
+                        class="m-checkbox-24"
+                        name=""
+                        id="selectAllCheckbox"
+                      />
+                    </th>
+                    <th class="width-col-2">MÃ NHÂN VIÊN</th>
+                    <th class="width-col-3">TÊN NHÂN VIÊN</th>
+                    <th class="width-col-4">GIỚI TÍNH</th>
+                    <th class="width-col-5 col-date">NGÀY SINH</th>
+                    <th class="width-col-6" title="Số chứng minh nhân dân">
+                      SỐ CMND
+                    </th>
+                    <th class="width-col-7">CHỨC DANH</th>
+                    <th class="width-col-8">TÊN ĐƠN VỊ</th>
+                    <th class="width-col-9">SỐ TÀI KHOẢN</th>
+                    <th class="width-col-10">TÊN NGÂN HÀNG</th>
+                    <th
+                      class="width-col-11"
+                      title="Chi nhánh tài khoản ngân hàng"
+                    >
+                      CHI NHÁNH TK NGÂN HÀNG
+                    </th>
+                    <th class="width-col-12 fixed-column">CHỨC NĂNG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="width-col-1">
+                      <input
+                        type="checkbox"
+                        class="m-checkbox-24"
+                        name=""
+                        id=""
+                      />
+                    </td>
+                    <td class="width-col-2">00012</td>
+                    <td class="width-col-3">Nguyễn Văn Liệt</td>
+                    <td class="width-col-4">Nam</td>
+                    <td class="width-col-5 col-date">31/12/1969</td>
+                    <td class="width-col-6">362520865</td>
+                    <td class="width-col-7">Trưởng Nhóm</td>
+                    <td class="width-col-8">Xay keo - Phối Trộn</td>
+                    <td class="width-col-9"></td>
+                    <td class="width-col-10"></td>
+                    <td class="width-col-11"></td>
+                    <td class="width-col-12 funtion fixed-column">
+                      <a class="m-btn-icon m-btn-open-popup">Sửa</a>
+                      <a class="m-btn-icon">
+                        <div class="mi mi-16 mi-arrow-up-blue"></div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="width-col-1">
+                      <input
+                        type="checkbox"
+                        class="m-checkbox-24"
+                        name=""
+                        id=""
+                      />
+                    </td>
+                    <td class="width-col-2">00012</td>
+                    <td class="width-col-3">Nguyễn Văn Liệt</td>
+                    <td class="width-col-4">Nam</td>
+                    <td class="width-col-5 col-date">31/12/1969</td>
+                    <td class="width-col-6">362520865</td>
+                    <td class="width-col-7">Trưởng Nhóm</td>
+                    <td class="width-col-8">Xay keo - Phối Trộn</td>
+                    <td class="width-col-9"></td>
+                    <td class="width-col-10"></td>
+                    <td class="width-col-11"></td>
+                    <td class="width-col-12 funtion fixed-column">
+                      <a class="m-btn-icon m-btn-open-popup">Sửa</a>
+                      <a class="m-btn-icon">
+                        <div class="mi mi-16 mi-arrow-up-blue"></div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="width-col-1">
+                      <input
+                        type="checkbox"
+                        class="m-checkbox-24"
+                        name=""
+                        id=""
+                      />
+                    </td>
+                    <td class="width-col-2">00012</td>
+                    <td class="width-col-3">Nguyễn Văn Liệt</td>
+                    <td class="width-col-4">Nam</td>
+                    <td class="width-col-5 col-date">31/12/1969</td>
+                    <td class="width-col-6">362520865</td>
+                    <td class="width-col-7">Trưởng Nhóm</td>
+                    <td class="width-col-8">Xay keo - Phối Trộn</td>
+                    <td class="width-col-9"></td>
+                    <td class="width-col-10"></td>
+                    <td class="width-col-11"></td>
+                    <td class="width-col-12 funtion fixed-column">
+                      <a class="m-btn-icon m-btn-open-popup">Sửa</a>
+                      <a class="m-btn-icon">
+                        <div class="mi mi-16 mi-arrow-up-blue"></div>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="ms-pagination">
+                <div class="left-pagination">Tổng số <b>1035</b> bản ghi</div>
+                <div class="right-pagination">
+                  <div class="record-in-page">
+                    <div
+                      id="m-cbo-record-in-page"
+                      class="m-combobox"
+                      style="width: 100%"
+                    >
+                      <div class="m-combobox-content">
+                        <input
+                          type="text"
+                          id="staff-record-in-page"
+                          placeholder="20 bản ghi"
+                          readonly="true"
+                          onkeyup="filterComboboxFunction()"
+                          style="width: calc(100% - 40px)"
+                        />
+                        <a id="cbo_btn_record-in-page"
+                          ><div class="mi mi-16 mi-arrow-dropdown"></div
+                        ></a>
+                      </div>
+                      <div
+                        class="m-combobox-dropdown m-combobox-dropdown-up"
+                        id="cbo_ddl_record-in-page"
+                      >
+                        <div class="scroller">
+                          <a class="selected" href="#hn"
+                            >20 bản ghi
+                            <div class="mi mi-24 mi-tick"></div
+                          ></a>
+                          <a href="#hcm">TP. Hồ Chí Minh</a>
+                          <a href="#hp">Hải Phòng</a>
+                          <a href="#hd">Hải Dương</a>
+                        </div>
+                      </div>
+                      <!-- <span class="m-combobox-danger">&lt;Tên trường&gt; không được để trống</span> -->
+                    </div>
+                  </div>
+
+                  <div class="paging">
+                    <div class="arrow-left disabled">Trước</div>
+                    <div class="page-index">
+                      <div class="page-selected">1</div>
+                      <div>2</div>
+                      <div>3</div>
+                      <div>4</div>
+                    </div>
+                    <div class="arrow-right">Sau</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- div popup form chi tiết -->
+        <div class="ms-popup" id="render-form-chi-tiet"></div>
+        <!-- div dialog thông báo -->
+        <div class="ms-dialog"></div>
+      </div>
+    </main>
+    <!-- import js -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.m-combobox {
+    position: relative;
+    width: 422px;
+  }
+  
+  .combobox-input-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px 4px 0 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+  
+  }
+  
+  .combobox-input-control .combobox-input {
+    flex: 1;
+    border: none;
+    outline: none;
+  }
+  
+  .combobox-icon-down .icon {
+    background: url("@/assets/img/Sprites.64af8f61.svg") no-repeat -1129px -365px;
+    width: 14px;
+    height: 8px;
+  }
+  
+  .combobox-icon-down {
+    width: 24px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .combobox-dropdown-list {
+    position: absolute;
+    border: 1px solid #e6e6e6;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 99;
+  }
+  
+  .combobox-dropdown-list {
+    max-height: 130px;
+    overflow-y: scroll;
+  }
+  
+  .combobox-dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #eeeff1;
+    }
+  }

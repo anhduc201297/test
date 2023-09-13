@@ -1,0 +1,140 @@
+/* ----------PRIMARY BUTTON---------- */
+.btn-pri {
+    height: 36px;
+    min-width: 80px;
+    padding: 8px 16px 9px 16px;
+    border-radius: 4px;
+    background-color: var(--element-color-blue-primary);
+    color: var(--text-color-white-title);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-pri:hover {
+    background-color: var(--element-color-blue-hover-bold);
+}
+
+.btn-pri:focus-visible, 
+.btn-pri:active {
+    background-color: var(--element-color-blue-focus);
+    scale: 0.98;
+}
+
+/* ----------EXTRA BUTTON---------- */
+.btn-extra {
+    height: 36px;
+    min-width: 80px;
+    padding: 8px 16px 9px 16px;
+    border-radius: 4px;
+    background-color: var(--background-color-while);
+    border: 1px solid var(--border-color-grey);
+    color: var(--text-color-black-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-extra:hover {
+    background-color: var(--background-color-grey-hover);
+}
+
+.btn-extra:focus-visible, 
+.btn-extra:active {
+    background-color: var(--background-color-grey-focus);
+    scale: 0.98;
+}
+
+/* ----------ICON-TEXT BUTTON---------- */
+.btn-icon-text {
+    padding-left: 32px;
+}
+
+/* ----------ICON BUTTON---------- */
+.btn-icon-s,
+.btn-icon-m,
+.btn-icon-l {
+    border-radius: 4px;
+    width: unset; /* set in separate css */
+    height: unset; /* set in separate css */
+    padding: 0;
+    background-color: var(--element-color-blue-primary);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-icon-s {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-icon-m {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-icon-l {
+    width: 40px;
+    height: 40px;
+}
+
+.transparent ,
+.transparent:hover {
+    background-color: unset;
+}
+
+/* ----------LINK BUTTON---------- */
+.btn-link-s {
+    color: var(--element-color-blue-primary);
+    min-width: unset;
+    height: 28px;
+    padding: 0 8px;
+    background-color: unset;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-link-s:hover {
+    background-color: unset;
+}
+
+/* ----------COMBO BUTTON (icon + text + select)---------- */
+.btn-combo {
+
+}
+
+/* ----------SELECT BUTTON---------- */
+.btn-select {
+
+}
+
+/* ----------CONTEXT MENU ITEM BUTTON---------- */
+.btn-context__item {
+    border: none;
+    background-color: unset;
+    width: 100%;
+}
+
+/* ----------COMBO BOX---------- */
+.combo-box-s {
+    position: relative;
+    display: flex;
+    height: 28px;
+}
+
+/* ----------BUTTON DANGEROUS---------- */
+.btn-dangerous {
+    color: var(--text-color-white-title);
+    background-color: #DE3617;
+}
+
+.btn-dangerous:hover {
+    background-color: #dd452a;
+}
+
+.btn-dangerous:focus-visible,
+.btn-dangerous:active {
+    background-color: #801907;
+}
+

@@ -1,0 +1,35 @@
+.btn-normal{
+    background-color: #ffffff;
+    height: var(--height-default);
+    min-width: 80px;
+    border: 1px solid #E0E0E0;
+    border-radius: var(--border-radius);
+    padding: 0 16px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.btn-normal:hover{
+    background-color: #eeeeee;
+}
+.btn-normal:focus, .btn-normal:active{
+    background-color: #e0e0e0;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: #ffffff;
+    height: var(--height-default);
+    min-width: 80px;
+    border: var(--color-border-default);
+    border-radius: var(--border-radius);
+    padding: 0 16px;
+    cursor: pointer;
+    
+}
+.btn-primary:hover{
+    background-color: var(--color-hover);
+    
+}
+.btn-primary:focus, .btn-primary:active{
+    background-color: var(--color-focus);
+}

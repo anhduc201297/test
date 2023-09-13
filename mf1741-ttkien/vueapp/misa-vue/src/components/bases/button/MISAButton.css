@@ -1,0 +1,36 @@
+button {
+    min-width: 80px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.main-button {
+    background-color: var(--primary-btn-background-color);
+    color: #fff;
+    border: none;
+}
+
+.main-button:hover {
+    background-color: var(--primary-btn-background-color_hover);
+}
+
+.main-button:active {
+    background-color: var(--primary-btn-background-color_active);
+}
+
+.minor-button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--minor-button-border-color);
+    margin-right: 12px;
+}
+
+.minor-button:hover {
+    background-color: var(--minor-button-background-color_hover);
+}
+
+.minor-button:active {
+    background-color: var(--minor-button-background-color_active);
+}

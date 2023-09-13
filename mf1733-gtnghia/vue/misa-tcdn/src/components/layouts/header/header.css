@@ -1,0 +1,66 @@
+/* ---------- HEADER ---------- */
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 8px 12px;
+    background-color: var(--background-color-black-bold);
+}
+
+/* ---------HEADER START---------- */
+.header .header__start {
+    display: block;
+    float: left;
+    width: calc(200px - 12px);
+}
+
+.header__start .logo-container {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header__start .logo-container .btn-homepage {
+    width: 100px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.header__start .btn-homepage .img-logo-homepage {
+    width: 100%;
+}
+
+/* ---------HEADER CENTER---------- */
+.header .header__center {
+    display: flex;
+    flex: 1;
+}
+
+/* ---------HEADER END---------- */
+.header__end {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header__end .user {
+    display: flex;
+    align-items: center;
+}
+
+.user .user-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.user-avatar .img-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.user .user-name {
+    color: var(--text-color-white-title);
+}

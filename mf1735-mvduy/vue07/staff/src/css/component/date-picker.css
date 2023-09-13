@@ -1,0 +1,17 @@
+
+.d-date-picker{
+    height: var(--height-default);
+    width: 180px;
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-color: var(--border-color-default);
+    border-width: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+    outline:none;
+    margin: 8px 6px 8px 0px;
+    
+}
+.d-date-picker:focus{
+    border-color: var(--color-focus);
+}

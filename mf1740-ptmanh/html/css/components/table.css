@@ -1,0 +1,132 @@
+/* ===== Table list ===== */
+.table--asset-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table--asset-list tr td:first-child {
+        padding: 0 16px;
+    }
+
+    /* .table--asset-list tr td:not(first-child) {
+        padding: 0 0px;
+    } */
+
+    /* thead */
+    .table--asset-list thead tr{
+        background-color: #f5f5f5;
+        font-weight: 700;
+        height: 38px;
+    }
+    /*  */
+
+
+    /* tbody */
+    .table--asset-list tbody tr {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        height: 39px;
+    }
+
+    .table--asset-list input[type="checkbox"]{
+        width: 14px;
+        height: 14px;
+    }
+
+    .table--asset-list tr td:first-child:not([colspan]) {
+        width: 34px;
+    }
+
+    .table--asset-list tbody tr:hover:not(.ignore-focus), .table--asset-list tr:focus:not(.ignore-focus){
+        background-color: rgba(26, 164, 200, .2);
+    }
+
+    .table--asset-list tbody tr:hover:not(.ignore-focus) .hidden, .table--asset-list tr:focus:not(.ignore-focus) .hidden{
+        display: flex;
+        justify-content: center;
+        gap: 4px;;
+    }
+    .hidden .icon--button:hover{
+        background-color: var( --color-hover);
+    }
+    .hidden .icon--button:hover .icon--20{
+        filter: brightness(0) invert(1);
+    }
+    /*  */
+
+    /* tfoot */
+    .table--asset-list tfoot tr{
+        height: 40px;
+    }
+
+    .table--asset-list tfoot tr td:not(:first-child){
+        font-weight: 700;
+    }
+
+    .table--asset-list .table__pagination {
+        display: flex;
+        flex-direction: row;
+        gap: 38px;
+        align-items: center;
+        height: 40px;
+        margin-top: 1px;
+        margin: 0;
+    }
+
+    .table--asset-list .table__pagination--text {
+        width: 150px;
+        font-size: 11px;
+    }
+
+    .table--asset-list .table__pagination--input{
+        display: flex;
+        gap: 15px;
+        background-color: #ffffff;
+        border-radius: 2.625px;
+        border: 1px solid #afafaf;
+        width: 59px;
+        height: 25px;
+        padding: 0 0 0 14px;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+    }
+
+    .table__pagination--input i{
+        position: absolute;
+        right: 10px;
+    }
+    .table--asset-list .table__pagination--page{
+        margin: 0;
+        display: flex;
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    .table--asset-list ul {
+        list-style: none;
+    }
+
+    .table--asset-list .table__pagination--page-button{
+        border-radius: 3px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 3px 0;
+    }
+
+    .table--asset-list .table__pagination--page-button:hover{
+        background-color: #f5f5f5;
+    }
+    .table__pagination--page-button > a{
+        font-size: 11px;
+    }
+/* End table--asset-list */
+
+.table--asset-form {
+    width: 100%;
+    padding: 0 16px;
+    gap: 20px;
+}

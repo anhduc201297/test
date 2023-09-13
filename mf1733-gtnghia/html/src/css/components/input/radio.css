@@ -1,0 +1,19 @@
+/* ----------INPUT RADIO---------- */
+
+.radio-box-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-item .input-radio {
+    margin-right: 4px;
+    width: 18px;
+    height: 36px;
+  }
+  

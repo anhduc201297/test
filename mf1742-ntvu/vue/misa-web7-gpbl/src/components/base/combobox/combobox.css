@@ -1,0 +1,108 @@
+.combo-box-wrapper {
+    position: relative;
+}
+.combo-box-wrapper .m-btn {
+    position: absolute;
+    border-top-left-radius: 0;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 0;
+    background-color: transparent;
+}
+.combo-box-wrapper.isClose .m-btn:hover {
+    border: 1px solid var(--color-green-400);
+    border-left: transparent;
+    box-sizing: border-box;
+    background-color: var(--color-border);
+}
+
+.combo-box-wrapper.danger .danger--info {
+    display: block;
+}
+.danger--info {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-red-400);
+}
+.combo-box__items {
+    position: absolute;
+    max-height: calc(50vh - 80px);
+
+    width: max(100%, 120px);
+    min-width: fit-content;
+    border: 1px solid var(--color-border);
+    background-color: #ffffff;
+    box-shadow: 2px 4px 16px rgba(23, 27, 42, 0.24);
+    padding: 7px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 99;
+}
+.combo-box__items::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.combo-box__items::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--color-grey-600);
+}
+.combo-box__items::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+ul {
+    list-style-type: none;
+    position: relative;
+}
+.combo-toggle:focus {
+    border-radius: var(--border-radius-default);
+}
+.combo-toggle-anim {
+    transition: rotate 0.15s linear;
+    animation: none-bg 0.3s linear;
+    rotate: 180deg;
+}
+
+.combo-box-wrapper.isDropHover input {
+    border-color: var(--color-green-400);
+}
+.combo-box-header {
+    background-color: var(--color-grey-300);
+}
+.combo-box-item,
+.combo-box-item-icon,
+.combo-box-header {
+    height: var(--height-default);
+    line-height: var(--height-default);
+    font-size: 12px;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+}
+.combo-box-item,
+.combo-box-header {
+    padding: 0 7px;
+}
+.combo-box-item {
+    margin-top: 4px;
+}
+.combo-box-list {
+    list-style-type: none;
+}
+
+.combo-box-item:hover {
+    cursor: pointer;
+    background-color: currentColor;
+}
+
+.combo-box-footer {
+    background-color: var(--color-grey-200);
+}
+.combo-box-footer .m-btn-icon {
+    color: var(--color-green-600);
+}
+.combo-box-item--focus {
+    background-color: currentColor;
+}

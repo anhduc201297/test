@@ -1,0 +1,119 @@
+.table {
+  width: 1499px;
+  border-spacing: 0;
+  margin-top: 8px;
+  position: relative;
+}
+.table thead {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  text-transform: uppercase;
+}
+.table th,
+td {
+  height: 45px;
+  border-bottom: var(--boder--solid--input);
+  border-right: var(--border--dotted);
+}
+
+.table th {
+  background-color: #e5e8ec;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* text-align: left; */
+  border-right: var(--boder--solid--input);
+}
+
+.table td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.table tr:hover td {
+  background: #fff8cb;
+}
+
+.column__sticky {
+  position: sticky;
+  background-color: var(--color--white);
+  z-index: 1;
+  top: 0;
+  border-left: var(--border--dotted);
+}
+
+.edit__td {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* line-height: 48px; */
+}
+
+/* Xử lý button sửa trong table */
+.value__edit {
+  position: absolute;
+  width: 125px;
+  border: var(--boder--solid--input);
+  background-color: var(--color--white);
+  top: 30%;
+  right: 65px;
+  z-index: 9;
+  visibility: hidden;
+}
+
+.edit__item {
+  padding: 5px 10px;
+}
+
+.edit__item:hover {
+  cursor: pointer;
+  background-color: var(--color--hover);
+  color: #50b83c;
+}
+
+.column__checkbox {
+  left: 0px;
+}
+.column__edit {
+  right: 0px;
+}
+
+.width__100 {
+  min-width: 100px;
+}
+
+.width__150 {
+  min-width: 150px;
+}
+
+.width__200 {
+  min-width: 200px;
+}
+
+.width__250 {
+  min-width: 250px;
+}
+
+.width__340 {
+  min-width: 340px;
+}
+
+.column__edit--th {
+  z-index: 1;
+  border-left: var(--border--dotted);
+}
+
+.text__edit {
+  color: #0075c0;
+  font-weight: bold;
+}
+
+.text__left {
+  text-align: left;
+}
+.text__center {
+  text-align: center !important;
+}
+.text__right {
+  text-align: right;
+}

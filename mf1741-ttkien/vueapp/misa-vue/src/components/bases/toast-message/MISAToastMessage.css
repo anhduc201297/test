@@ -1,0 +1,42 @@
+.box-toast-message {
+    position: absolute;
+    right: 12px;
+    bottom: 18px;
+    min-width: 450px;
+    max-width: 650px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+.box-toast-message .toast-mess-content,
+.box-toast-message .toast-mess-action {
+    display: flex;
+    align-items: center;
+}
+
+.toast-mess-content span {
+    font-family: notosans-bold;
+    margin-left: 8px;
+}
+
+.toast-mess-content .success {
+    color: var(--toast-message-success);
+}
+
+.toast-mess-content .error {
+    color: var(--toast-message-error);
+}
+
+.box-toast-message .action-undo {
+    text-decoration: underline;
+    font-family: notosans-semibold;
+    margin: 16px;
+    cursor: pointer;
+}

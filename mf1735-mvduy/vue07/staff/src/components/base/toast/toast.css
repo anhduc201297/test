@@ -1,0 +1,38 @@
+.d-toast{
+    height: 56px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.078);
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 100;
+
+}
+
+.left-toast{
+    display: flex;
+    align-items: center;
+}
+
+.left-toast .icon{
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.left-toast .title-toast{
+    font-family: MISA Bold;
+    color: var(--color-primary);
+    margin-right: 8px;
+}
+
+.right-toast .icon{
+    margin-right: 16px;
+    margin-left: 12px;
+}
+

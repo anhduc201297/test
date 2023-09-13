@@ -1,0 +1,60 @@
+.dialog {
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    position: fixed;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.4);
+    visibility: hidden;
+}
+
+.dialog-box {
+    width: 400px;
+    min-width: 400px;
+    z-index: 100;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: var(--border-radius);
+    padding: 24px;
+}
+
+
+/* dialog header */
+.dialog-header {
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+/* dialog content */
+.dialog-content {
+    padding-bottom: 24px;
+}
+.dialog-text {
+    padding-left: 24px;
+}
+
+/* dialog footer */
+.dialog-footer-1 {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+
+/* dialog icon */
+.dialog-icon {
+    background: url(@/assets/img/Sprites.64af8f61.svg) no-repeat -752px -462px;
+	width: 36px;
+	height: 36px;
+}
+.icon-close-dialog {
+    background-position: -147px -147px;
+    width: 18px;
+	height: 18px;
+}

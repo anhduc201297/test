@@ -1,0 +1,47 @@
+.m-dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 308px; /* zero */
+  overflow-y: auto;
+  padding: 8px; /* zero */
+}
+
+.m-dropdown-up {
+  bottom: calc(36px + 8px); /* zero */
+}
+
+/* Hiển thị dropdown */
+.m-dropdown.show {
+  display: block !important;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(23, 27, 42, 0.24);
+  border-radius: var(--border-radius-default);
+}
+
+a {
+  display: flex;
+  height: var(--rounded-button-height); /* zero  36px*/
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px; /* zero */
+}
+
+a div.mi {
+  visibility: hidden;
+}
+
+/* item hover */
+a:hover {
+  background-color: rgba(80, 184, 60, 0.1); /* zero */
+}
+
+/* item selected */
+a.selected {
+  color: #50b83c; /* zero */
+}
+
+a.selected div.mi {
+  visibility: visible;
+}

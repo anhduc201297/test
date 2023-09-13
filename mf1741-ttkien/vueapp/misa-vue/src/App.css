@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: notosans-bold;
+    src: url(./assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: notosans-italic;
+    src: url(./assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+@font-face {
+    font-family: notosans-regular;
+    src: url(./assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: notosans-semibold;
+    src: url(./assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+:root {
+    --primary-height: 36px;
+    --main-background-color: #e2e6eb;
+    --sidebar-background-color: #020a01;
+    --primary-btn-background-color: #007AFF;
+    --primary-btn-background-color_hover: #3395FF;
+    --primary-btn-background-color_active: #0062CC;
+    --table-header-color: #CCE4FF;
+    --table-row-hover: #fff2dc;
+    --table-row-focus: #ffeac9;
+    --input-border-color: #e0e0e0;
+    --input-border-color-error: #E61D1D;
+    --input-placeholder-color: #9E9E9E;
+    --input-radio-border-color: #e0e0e0;
+    --minor-button-border-color: #e0e0e0;
+    --minor-button-background-color_hover: #e6e6e6;
+    --minor-button-background-color_active: #e0e0e0;
+    --toast-message-success: #50B83C;
+    --toast-message-error: #DE3618;
+    --toast-message-warning: #F49342;
+    --toast-message-info: #007AFF;
+}
+
+body {
+    font-family: notosans-regular;
+    font-size: 13px;
+    background-color: var(--main-background-color);
+}
+
+#main {
+    display: flex;
+}
+
+.span-label {
+    margin: 0 8px;
+}
+
+.span-required {
+    color: red;
+    margin-left: 4px;
+}
+
+.tag-hidden {
+    visibility: hidden;
+}
+
+.tag-visible {
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aeaeae;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}

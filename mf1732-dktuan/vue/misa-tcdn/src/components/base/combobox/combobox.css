@@ -1,0 +1,68 @@
+.combobox-wrapper {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.combobox-wrapper .loading-container,
+.combobox-wrapper .loading-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.combobox-wrapper .loading-container {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    left: unset;
+}
+
+.v-input__control {
+    height: 32px;
+}
+
+.v-field div, .v-field input {
+    border-radius: 2px;
+
+    height: 32px;
+    font-family: NotoRegular;
+    font-size: 1.4rem;
+    /* min-height: 32px; */
+}
+
+.v-field__loader {
+    top: 0;
+}
+
+.v-field--variant-filled .v-field__overlay {
+    background-color: transparent;
+}
+
+.v-field__outline {
+    border: 1px solid var(--outline);
+}
+
+.v-field__outline::before, .v-field__outline::after {
+    display: none;
+}
+
+.v-field__input, .v-combobox--single.v-text-field input {
+    top: 0;
+    margin-top: 0;
+}
+
+.v-combobox--single .v-field--dirty:not(.v-field--focused) input {
+    opacity: 1;
+}
+
+.v-field--focused .v-field__outline {
+    border: 1px solid var(--button-color);
+}
+
+.v-list-item-title {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.v-input__details {
+    display: none;
+}

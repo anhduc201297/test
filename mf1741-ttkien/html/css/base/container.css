@@ -1,0 +1,218 @@
+.container {
+    width: calc(100% - 200px);
+    /* height: 100vh; */
+    /* height: 100%; */
+}
+
+.container-header {
+    font-family: notosans-semibold;
+    font-size: 14px;
+    display: flex;
+    height: 56px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon, .header-branch, .header-tooltip, .btn-info {
+    cursor: pointer;
+}
+
+.header-icon {
+    margin: 0 10px;
+}
+
+.container-header .header-branch {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding-left: 10px;
+}
+
+.container-header .header-branch .header-branch-title {
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+
+.container-header .account-info .account-info-btn {
+    font-family: notosans-semibold;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    margin-left: 32px;
+    /* margin-right: 12px; */
+    height: 56px;
+    cursor: pointer;
+}
+
+.container-header .account-info .btn-info-div {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    color: #000;
+}
+
+.btn-info-div .user-avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.container-content {
+    height: calc(100% - 56px);
+    padding: 0 20px;
+}
+
+.container-content .table-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.container-content .table-title .table-name {
+    font-family: notosans-bold;
+    font-size: 24px;
+}
+
+.container-content .table-content {
+    background-color: #fff;
+}
+
+.container-content .table-content .table-control {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 56px;
+}
+
+.table-data {
+    padding: 0 20px 10px;
+    font-size: 12px;
+}
+
+.table-data-content, th, td {
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+}
+
+.table-data-content {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 0 10px;
+}
+
+tr {
+    height: 36px;
+}
+
+tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.table-birth, .table-function {
+    text-align: center;
+}
+
+.table-function .option-func {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: notosans-bold;
+    color: var(--primary-btn-background-color);
+    cursor: pointer;
+}
+
+.option-func .fix-data {
+    line-height: 24px;
+    margin-right: 8px;
+}
+
+.table-pagination {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.record-in-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 200px;
+    height: 28px;
+    border: 1px solid var(--border-input-color);
+    border-radius: 4px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+/* .record-in-page:active {
+    border-color: var(--primary-btn-background-color);
+} */
+
+/* .record-in-page:active + .droplist-record {
+    display: block;
+} */
+
+.record-in-page .record-value {
+    margin-left: 12px;
+}
+
+.record-in-page .record-more-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+}
+
+.record-in-page .record-more-option:hover {
+    background-color: var(--border-input-color);
+}
+
+.record-in-page .record-more-option:active .icon-arrow-down{
+    transform: rotate(180deg);
+    transition: transform 0.25s;
+}
+.record-in-page .record-more-option:active .icon-arrow-up{
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+}
+
+body:active .icon-arrow-up {
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+}
+
+.page-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.page-number .pre-page {
+    color: #a6a6a6;
+}
+
+.page-number .page-index {
+    display: flex;
+    margin: 4px 8px;
+    cursor: pointer;
+}
+
+.page-number .page-index-item {
+    padding: 0 6px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}

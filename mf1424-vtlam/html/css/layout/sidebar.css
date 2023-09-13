@@ -1,0 +1,35 @@
+.sidebar {
+    width:200px;
+    height:calc(100vh - 56px);
+    background-color: #10250C;
+    float:left;
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    padding: 20px 12px 0 12px;
+    overflow: auto;
+}
+
+.sidebar__item{
+    color:#BDBDBD;
+    text-decoration: none;
+    height: 44px;
+    display: flex;
+    gap:12px;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: var(--border-radius);
+}
+
+.sidebar__item:hover {
+    color: #fff;
+    background-color: var(--color-hover);
+}
+
+.sidebar__icon {
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,33 @@
+button {
+    background-color: var(--primary-btn-background-color);
+    color: #fff;
+    border: none;
+    min-width: 80px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 0 16px;
+}
+
+button:hover {
+    background-color: var(--primary-btn-background-color-hover);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--primary-btn-background-color-active);
+}
+
+.form-footer .btn-cancel, .btn-store {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--border-btn-special-color);
+    margin-right: 10px;
+}
+
+.form-footer .btn-cancel:hover, .btn-store:hover {
+    background-color: var(--border-btn-special-color);
+}
+
+.form-footer .btn-cancel:active, .btn-store:active {
+    background-color: var(--border-input-color);
+}

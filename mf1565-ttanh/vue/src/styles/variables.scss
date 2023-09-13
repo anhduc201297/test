@@ -1,0 +1,208 @@
+/* color palette */
+:root {
+    --c-black: 0, 0, 0;
+    --c-white: 255, 255, 255;
+
+    --c-red-50: 252, 230, 230;
+    --c-red-100: 250, 204, 204;
+    --c-red-200: 245, 153, 153;
+    --c-red-300: 240, 102, 102;
+    --c-red-400: 235, 51, 51;
+    --c-red-500: 230, 0, 0;
+    --c-red-600: 184, 0, 0;
+    --c-red-700: 138, 0, 0;
+    --c-red-800: 92, 0, 0;
+    --c-red-900: 46, 0, 0;
+
+    --c-pink-50: 253, 233, 240;
+    --c-pink-100: 250, 210, 224;
+    --c-pink-200: 246, 165, 192;
+    --c-pink-300: 242, 120, 162;
+    --c-pink-400: 238, 75, 130;
+    --c-pink-500: 233, 30, 99;
+    --c-pink-600: 187, 24, 79;
+    --c-pink-700: 140, 18, 60;
+    --c-pink-800: 93, 12, 39;
+    --c-pink-900: 46, 6, 20;
+
+    --c-purple-50: 245, 234, 247;
+    --c-purple-100: 235, 212, 239;
+    --c-purple-200: 215, 169, 223;
+    --c-purple-300: 196, 125, 208;
+    --c-purple-400: 176, 82, 192;
+    --c-purple-500: 156, 39, 176;
+    --c-purple-600: 125, 31, 141;
+    --c-purple-700: 94, 23, 106;
+    --c-purple-800: 62, 16, 70;
+    --c-purple-900: 31, 8, 35;
+
+    --c-deep-purple-50: 240, 230, 255;
+    --c-deep-purple-100: 224, 204, 255;
+    --c-deep-purple-200: 193, 153, 255;
+    --c-deep-purple-300: 163, 102, 255;
+    --c-deep-purple-400: 132, 51, 255;
+    --c-deep-purple-500: 101, 0, 255;
+    --c-deep-purple-600: 81, 0, 204;
+    --c-deep-purple-700: 61, 0, 153;
+    --c-deep-purple-800: 40, 0, 102;
+    --c-deep-purple-900: 20, 0, 51;
+
+    --c-blue-50: 230, 242, 255;
+    --c-blue-100: 204, 228, 255;
+    --c-blue-200: 153, 202, 255;
+    --c-blue-300: 102, 175, 255;
+    --c-blue-400: 51, 149, 255;
+    --c-blue-500: 0, 122, 255;
+    --c-blue-600: 0, 98, 204;
+    --c-blue-700: 0, 73, 153;
+    --c-blue-800: 0, 49, 102;
+    --c-blue-900: 0, 24, 51;
+
+    --c-indigo-50: 237, 234, 255;
+    --c-indigo-100: 217, 212, 255;
+    --c-indigo-200: 180, 169, 255;
+    --c-indigo-300: 142, 127, 255;
+    --c-indigo-400: 105, 84, 255;
+    --c-indigo-500: 67, 41, 255;
+    --c-indigo-600: 54, 33, 204;
+    --c-indigo-700: 40, 25, 153;
+    --c-indigo-800: 27, 16, 102;
+    --c-indigo-900: 13, 8, 51;
+
+    --c-green-50: 231, 245, 236;
+    --c-green-100: 206, 234, 217;
+    --c-green-200: 156, 213, 179;
+    --c-green-300: 107, 193, 141;
+    --c-green-400: 57, 172, 102;
+    --c-green-500: 8, 151, 64;
+    --c-green-600: 6, 121, 51;
+    --c-green-700: 5, 91, 39;
+    --c-green-800: 3, 60, 26;
+    --c-green-900: 2, 30, 13;
+
+    --c-light-green-50: 238, 248, 236;
+    --c-light-green-100: 220, 241, 216;
+    --c-light-green-200: 185, 226, 177;
+    --c-light-green-300: 150, 213, 138;
+    --c-light-green-400: 115, 198, 99;
+    --c-light-green-500: 80, 184, 60;
+    --c-light-green-600: 64, 147, 48;
+    --c-light-green-700: 48, 111, 36;
+    --c-light-green-800: 32, 73, 24;
+    --c-light-green-900: 16, 37, 12;
+
+    --c-teal-50: 230, 246, 243;
+    --c-teal-100: 204, 236, 231;
+    --c-teal-200: 153, 218, 208;
+    --c-teal-300: 103, 200, 185;
+    --c-teal-400: 52, 182, 162;
+    --c-teal-500: 1, 163, 138;
+    --c-teal-600: 1, 131, 111;
+    --c-teal-700: 1, 98, 83;
+    --c-teal-800: 0, 65, 55;
+    --c-teal-900: 0, 32, 27;
+
+    --c-orange-50: 255, 245, 230;
+    --c-orange-100: 255, 234, 204;
+    --c-orange-200: 255, 214, 153;
+    --c-orange-300: 255, 193, 102;
+    --c-orange-400: 255, 173, 51;
+    --c-orange-500: 255, 152, 0;
+    --c-orange-600: 204, 122, 0;
+    --c-orange-700: 153, 91, 0;
+    --c-orange-800: 102, 61, 0;
+    --c-orange-900: 51, 30, 0;
+
+    --c-deep-orange-50: 255, 240, 230;
+    --c-deep-orange-100: 255, 224, 204;
+    --c-deep-orange-200: 255, 192, 153;
+    --c-deep-orange-300: 255, 162, 102;
+    --c-deep-orange-400: 255, 130, 51;
+    --c-deep-orange-500: 255, 99, 0;
+    --c-deep-orange-600: 204, 79, 0;
+    --c-deep-orange-700: 153, 60, 0;
+    --c-deep-orange-800: 102, 39, 0;
+    --c-deep-orange-900: 51, 20, 0;
+
+    --c-gray-50: 250, 250, 250;
+    --c-gray-100: 245, 245, 245;
+    --c-gray-200: 238, 238, 238;
+    --c-gray-300: 224, 224, 224;
+    --c-gray-400: 189, 189, 189;
+    --c-gray-500: 158, 158, 158;
+    --c-gray-600: 117, 117, 117;
+    --c-gray-700: 97, 97, 97;
+    --c-gray-800: 66, 66, 66;
+    --c-gray-900: 31, 31, 31;
+
+    --c-blue-gray-50: 239, 242, 244;
+    --c-blue-gray-100: 223, 229, 232;
+    --c-blue-gray-200: 191, 203, 208;
+    --c-blue-gray-300: 160, 177, 186;
+    --c-blue-gray-400: 128, 151, 162;
+    --c-blue-gray-500: 96, 125, 139;
+    --c-blue-gray-600: 77, 100, 111;
+    --c-blue-gray-700: 58, 75, 84;
+    --c-blue-gray-800: 38, 50, 55;
+    --c-blue-gray-900: 19, 25, 28;
+}
+
+/* font */
+:root {
+    --font-family-system: Notosans, sans-serif;
+
+    --font-size-12: 12px;
+    --line-height-12: 16px;
+
+    --font-size-13: 13px;
+    --line-height-13: 17px;
+
+    --font-size-14: 14px;
+    --line-height-14: 18px;
+
+    --font-size-16: 16px;
+    --line-height-16: 20px;
+
+    --font-size-18: 18px;
+    --line-height-18: 20px;
+
+    --font-size-20: 20px;
+    --line-height-20: 26px;
+}
+
+/* Semantic color variables */
+:root {
+    --c-primary: var(--c-green-500);
+    --modal-background: rgba(0, 0, 0, 0.4);
+}
+
+/* Layout variables */
+:root {
+    --sidebar-width: 200px;
+    --main-header-height: 56px;
+
+    --main-content-height: calc(100% - var(--main-header-height));
+    --main-content-padding-x: 24px;
+    --main-content-padding-y: 20px;
+    --main-content-header-height: 36px;
+
+    --data-table-height: calc(
+        100% - 2 * var(--main-content-padding-y) - var(--main-content-header-height)
+    );
+    --data-table-header-height: 36px;
+    --data-table-group-table-height: calc(100% - var(--data-table-header-height));
+    --table-row-height: 32px;
+}
+
+/* semantic variables */
+:root {
+    --sidebar-width-expand: 200px;
+    --sidebar-width-collapse: 56px;
+
+    --navbar-height: 56px;
+
+    --main-content-padding-top: 24px;
+    --main-content-padding-left: 24px;
+
+    --separator: 200, 200, 200;
+}

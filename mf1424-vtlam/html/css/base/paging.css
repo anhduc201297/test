@@ -1,0 +1,20 @@
+.paging {
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paging__right {
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.paging__arrow {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width:24px
+}

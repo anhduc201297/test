@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/layout/information.css">
+        <title>Thông tin nhân viên</title>
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../views/home.html">
+    </head>
+    <body>
+        <div class="user-form">
+            <div class="header">
+                <div class="header__title">
+                    <div class="header__name">Thông tin nhân viên</div>
+                    <div class="header__checkbox">
+                        <div class="header__checkbox--guest">
+                            <input type="checkbox" id="customCheckbox" class="header__checkbox-input">
+                            <label for="customCheckbox" class="header__checkbox-label">Là khách hàng</label>
+                        </div>
+                        <div class="header__checkbox--supplier">
+                            <input type="checkbox" id="customCheckbox" class="header__checkbox-input">
+                            <label for="customCheckbox" class="header__checkbox-label">Là nhà cung cấp</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__icon">
+                    <div class="icon header__icon--question"></div>
+                    <div class="icon header__icon--quit" onclick="closePopup()"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="subcontent">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Mã<span class="subcontent__required">*</span></label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="NV-1644" style="width: 140px; margin-right: 8px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Tên<span class="subcontent__required">*</span></label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Nguyễn Ánh Bằng" style="width: 240px; margin-right: 24px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Ngày sinh</label>
+                        </div>
+                        <div style="position: relative; display: inline-block;">
+                            <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="12/16/1980" style="width: 160px; margin-right: 8px;">
+                            <div class="icon birthday-icon"></div>
+                          </div>    
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name" style="margin-left: 14px;">Giới tính</label>
+                        </div>
+                        <form class="gender">
+                            <div class="gender__checkbox">
+                                <input name="gender" type="radio" value="Nam" class="gender__radio-button" />
+                                <div class="gender__name">Nam</div>
+                            </div>
+                            <div class="gender__checkbox">
+                                <input name="gender" type="radio" value="Nữ" class="gender__radio-button"/>
+                                <div class="gender__name">Nữ</div>
+                            </div>
+                            <div class="gender__checkbox">
+                                <input name="gender" type="radio" value="Khác" class="gender__radio-button"/>
+                                <div class="gender__name">Khác</div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="subcontent">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Đơn vị<span class="subcontent__required">*</span></label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Phòng Nhân sự" style="width: 400px; margin-right: 24px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name" style="width: 431px; margin-right: 12px;">Số CMND</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="6013758468" style="width: 225px; margin-right:8px;">        
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Ngày cấp</label>
+                        </div>
+                        <div style="position: relative; display: inline-block;">
+                            <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="12/16/1980" style="width: 160px; margin-right: 8px;">
+                            <div class="icon birthday-icon"></div>
+                          </div>    
+                    </div>
+                </div>
+                <div class="subcontent" style="margin-top: 24px;">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Chức danh</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Lễ tân chính" style="width: 400px; margin-right: 24px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Nơi cấp</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Hải Phòng" style="width: 405px; margin-right: 24px;">       
+                    </div>
+                </div>
+                <div class="subcontent">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Địa chỉ</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="146 Phạm Văn Chiêu" style="width: 840px; margin-right: 24px;">       
+                    </div>
+                </div>
+                
+                <div class="subcontent">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">ĐT di động</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="0963579744" style="width: 200px; margin-right: 8px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">ĐT cố định</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="(764) 749-6478" style="width: 200px; margin-right: 8px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Email</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="procuon856@example.com" style="width: 200px; margin-right: 8px;">       
+                    </div>
+                </div>
+                <div class="subcontent">
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Tài khoản ngân hàng</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="944174" style="width: 200px; margin-right: 8px;">       
+                    </div>
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Tên ngân hàng</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Ngân hàng Vietcombank" style="width: 200px; margin-right: 8px;">       
+                    </div>
+
+                    <div class="subcontent__form-input">
+                        <div class="subcontent__label">
+                            <label class="subcontent__name">Chi nhánh</label>
+                        </div>
+                        <input type="text" id="input" name="subcontent__input" class="subcontent__input" placeholder="Chi nhánh 6" style="width: 200px; margin-right: 8px;">       
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="btn">
+                <div class="btn--left">
+                    <button class="btn--cancel" onclick="closePopup()">Hủy</button>
+                    <script src="../js/script.js"></script>
+                </div>
+                <div class="btn--right">
+                    <button class="btn--hidden">Cất</button>
+                    <button class="btn--add">Cất và Thêm</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+.main-content {
+  margin: 24px; /* zero */
+  width: calc(100% - 48px); /* margin-left = margin-right = 24px */
+  height: calc(
+    100vh - 104px
+  ); /* height-header = 56px, margin-top = 24px, margin-bottom = 24px */
+  background-color: var(--main-background-color);
+  padding: 0;
+}
+
+
+/* Toast message */
+.toast-container {
+  z-index: 20;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column; /* Hiện theo chiều dọc */
+  background-color: #fff;
+}

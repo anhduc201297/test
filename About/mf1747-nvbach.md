@@ -1,0 +1,3 @@
+Họ và tên: Nguyễn Văn Bách D19 PTIT
+Mã fresher: MF1747
+Sở thích: TFT, AOV, CSGO, ...

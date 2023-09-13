@@ -1,0 +1,94 @@
+@import url(./components/input.css);
+@import url(./components/combobox.css);
+@import url(./components/table.css);
+@import url(./components/paging.css);
+@import url(./components/scrollbar.css);
+@import url(./components/icon.css);
+@import url(./components/message.css);
+@import url(./components/dialog.css);
+@import url(./components/popup.css);
+@import url(./components/tooltip.css);
+@import url(./layout/container.css);
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/content.css);
+@import url(./common.css);
+
+/* Cấu hình css cho trang web */
+
+/* Các biến */
+:root {
+    --text-color-black: #212121;
+    --text-color-white: #eaeaea;
+    --color-primary: #089740;
+    --color-hover: #39AC66;
+    --color-active: #055B27;
+    --color-900: #021E0D;
+    --border-radius: 4px;
+    --boder-color: #e0e0e0;
+    --height-default: 36px;
+
+}
+
+/* Font chữ */
+@font-face {
+    font-family: regular font;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: bold font;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: italic font;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+@font-face {
+    font-family: semibold font;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+/* Css chung cho cả trang web */
+* {
+    font-family: regular font;
+    font-size: 14px;
+    margin: 0px;
+    color: var(--text-color-black);
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: bold font;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h2 {
+    font-family: bold font;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h3 {
+    font-family: bold font;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4 {
+    font-family: bold font;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+

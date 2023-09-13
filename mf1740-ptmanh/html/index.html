@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/icon/QLTS-Icon-16x16.ico">
+    <title>Danh sách tài sản</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar collapse">
+        <div class="sidebar__home">
+            <a href="#">
+                <i class="icon--36 icon--home"></i>
+                <div class="sidebar--title">MISA QLTS</div>
+            </a>
+        </div>
+        <ul class="sidebar__menu--container">
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--general"></i>
+                    <div class="sidebar__menu--text">Tổng quan</div>  
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--asset"></i>
+                    <div class="sidebar__menu--text">
+                        Tài sản
+                        <i class="icon--20 icon--angle-down"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--asset-2"></i>
+                    <div class="sidebar__menu--text" tooltip="Tài sản ...-đặc biệt">
+                        Tài sản HH-ĐB
+                        <i class="icon--20 icon--angle-down"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--tool"></i>
+                    <div class="sidebar__menu--text">
+                        Công cụ dụng cụ
+                        <i class="icon--20 icon--angle-down"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--category"></i>
+                    <div class="sidebar__menu--text">Danh mục</div>
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--search-menu"></i>
+                    <div class="sidebar__menu--text">
+                        Tra cứu
+                        <i class="icon--20 icon--angle-down"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__menu--item">
+                <a href="#">
+                    <i class="icon--24 icon--button icon--report"></i>
+                    <div class="sidebar__menu--text">
+                        Báo cáo
+                        <i class="icon--20 icon--angle-down"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar__footer">
+            <i class="icon--24 icon--button icon--arrow-from-right sidebar__footer--collapse-button"></i>
+        </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header__title">Danh sách tài sản</div>
+        <div class="header__menu">
+            <div class="header__menu--text">Sở tài chính</div>
+            <div class="header__menu--input custom-nums">
+                <p>Năm</p>
+                <input class="year-input number-input hidden-arrow" type="number" value="2021" step="1">
+                <div class="arr-up-down">
+                    <div class="arr-up">
+                        <i class="icon--8 icon--caret-up"></i>
+                    </div>
+                    <div class="arr-down">
+                        <i class="icon--8 icon--caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu--icons">
+                <a href="#" class="icon--button">
+                    <div class="icon--24 icon--notification"></div>
+                </a>
+                <a href="#" class="icon--button">
+                    <div class="icon--24 icon--system"></div>
+                </a>
+                <a href="#" class="icon--button">
+                    <div class="icon--24 icon--support"></div>
+                </a>
+                <a href="#" class="icon--button">
+                    <div class="icon--24 icon--profile"></div>
+                    <div class="icon--button icon--caret-down"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Container -->
+    <div class="container">
+        <div class="feature-bar">
+            <div class="feature-bar__search-bar">
+                <div class="input--search-container">
+                    <input class="input--search" placeholder="Tìm kiếm tài sản"></input>
+                    <span class="icon--input"><div class="icon--24 icon--search"></div></span>
+                </div>
+                <div class="input--filter-container">
+                    <select class="input--filter">
+                        <option value="" disabled selected hidden>Loại tài sản</option>
+                    </select>
+                    <div class="icon--24 icon--input icon--filter"></div>
+                    <!-- <div class="icon--input icon--caret-down"></div> -->
+                </div>
+                <div class="input--filter-container">
+                    <select class="input--filter" placeholder="">
+                        <option value="" disabled selected hidden>Bộ phận sử dụng</option>
+                    </select>
+                    <div class="icon--24 icon--input icon--filter"></div>
+                    <!-- <div class="icon--input icon--caret-down"></div> -->
+                </div>
+            </div>
+            <div class="feature-bar__button-bar">
+                <button type="button" class="pri-button-icon--default" onclick="displayAssetForm('add')">
+                    <div class="icon--8 icon--button icon--plus mr-4"></div>
+                    Thêm tài sản
+                </button>
+                <a href="#" class="icon-button"><div class="icon--20 icon--button icon--excel"></div></a>
+                <a href="#" class="icon-button"><div class="icon--20 icon--button icon--delete"></div></a>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="table--asset-list">
+                <thead>
+                    <tr class="ignore-focus">
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left" tooltip="Số thứ tự">STT</td>
+                        <td class="ta-left">Mã tài sản</td>
+                        <td class="ta-left">Tên sản phẩm</td>
+                        <td class="ta-left">Loại tài sản</td>
+                        <td class="ta-left">Bộ phận sử dụng</td>
+                        <td class="ta-right">Số lượng</td>
+                        <td class="ta-right">Nguyên giá</td>
+                        <td class="ta-right" tooltip="Hao mòn/Khấu hao lũy kế">HM/KH lũy kế</td>
+                        <td class="ta-right">Giá trị còn lại</td>
+                        <td class="ta-center">Chức năng</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">1</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <a href="#" class=" icon--button ">
+                                    <div class="icon--20 icon--edit"></div>
+                                </a>
+                                <a class="icon--button ">
+                                    <div  class="icon--20 icon--detail"></div>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">1</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">2</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">3</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">4</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">5</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">6</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">7</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">8</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="ta-left">
+                            <input type="checkbox"></input>
+                        </td>
+                        <td class="ta-left">9</td>
+                        <td class="ta-left">82SN00AYVN</td>
+                        <td class="ta-left">Lenovo IdeaPad 5 Pro 16</td>
+                        <td class="ta-left">Máy vi tính xách tay</td>
+                        <td class="ta-left">Phòng Thư ký</td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                            <div class="hidden">
+                                <div class=" icon--button ">
+                                    <a href="#" class="icon--20 icon--edit"></a>
+                                </div>
+                                <div class="icon--button ">
+                                    <a href="#" class="icon--20 icon--detail"></a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="ignore-focus">
+                        <td colspan="6">
+                            <div class="table__pagination">
+                                <div class="table__pagination--text">Tổng số: <b>200</b> bản ghi</div>
+                                <div class="table__pagination--input">
+                                    <a class="font--11">20</a>
+                                    <i class="icon--button icon--caret-down"></i>
+                                </div>
+                                <ul class="table__pagination--page">
+                                    <li class="table__pagination--page-button">
+                                        <div class="icon--20 icon--button icon--angle-left"></div>
+                                    </li>
+                                    <li class="table__pagination--page-button"><a>1</a></li>
+                                    <li class="table__pagination--page-button"><a>2</a></li>
+                                    <li>...</li>
+                                    <li class="table__pagination--page-button"><a>10</a></li>
+                                    <li class="table__pagination--page-button">
+                                        <div class="icon--20 icon--button icon--angle-right"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="ta-right">1</td>
+                        <td class="ta-right">20.900.000</td>
+                        <td class="ta-right">1.000.000</td>
+                        <td class="ta-right">19.900.000</td>
+                        <td class="ta-center">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>    
+        </div>
+    </div>
+    <!-- End Container -->
+    <!-- Modal -->
+    <div class="modal hidden">
+        <div class="modal__container">
+            <div class="modal__header">
+                <p class="modal__title">Thêm tài sản</p>
+                <div class="modal__header--close">
+                    <div class="icon--36 icon--button icon--close"></div>
+                </div>
+            </div>
+            <form id="detail-form" action="" method="get">
+                <div class="row grid-row">
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Mã tài sản
+                            <span>*</span>
+                        </div>
+                        <input id="estate__id"  name="estate__id" class="text-field" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="col-8 input-control">
+                        <div class="text-format">
+                            Tên tài sản
+                            <span>*</span>
+                        </div>
+                        <input id="estate__name"  name="estate__name" class="text-field" type="text" placeholder="Nhập tên tài sản">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Mã bộ phận sử dụng
+                            <span>*</span>
+                        </div>
+                        <input id="department__id"  name="department__id" class="text-field  icon-down" list="ma-bp" type="text" placeholder="Chọn mã bộ phận">
+                        <div class="error"></div>
+                        <datalist id="ma-bp">
+                            <option value="bp-1">Apple</option>
+                            <option value="bp-2">Banana</option>
+                            <option value="bp-3">Orange</option>
+                        </datalist>
+                    </div>
+                    <div class="col-8">
+                        <div class="text-format">
+                            Tên bộ phận sử dụng
+                        </div>
+                        <input id="department__name"  name="department__name" class="text-field highlight-input" type="text" disabled placeholder="">
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Mã loại tài sản
+                            <span>*</span>
+                        </div>
+                        <input id="estate__category-id" name="estate__category-id"  class="text-field icon-down" type="text" placeholder="Chọn mã loại">
+                        <div class="error"></div>
+                    </div>
+                    <div class="col-8">
+                        <div class="text-format">
+                            Tên loại tài sản
+                        </div>
+                        <input id="estate__category-name" name="estate__category-name"  class="text-field highlight-input" type="text" disabled placeholder="">
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-4 ">
+                        <div class="text-format">
+                            Số lượng
+                            <span>*</span>
+                        </div>
+                        <div class="custom-nums form__input--number input-control">
+                            <input id="estate__quantity"  name="estate__quantity"  class="text-field hidden-arrow number-input" type="number" placeholder="">
+                            <div class="error"></div>
+                            <div class="arr-up-down">
+                                <div class="arr-up">
+                                    <i class="icon--8 icon--caret-up"></i>
+                                </div>
+                                <div class="arr-down">
+                                    <i class="icon--8 icon--caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Nguyên giá
+                            <span>*</span>
+                        </div>
+                        <input id="original-price" name="original-price"  class="text-field hidden-arrow number-input " type="number" placeholder="">
+                        <div class="error"></div>
+                    </div>
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Số năm sử dụng
+                            <span>*</span>
+                        </div>
+                        <input id="year-used" name="year-used"  class="text-field hidden-arrow number-input" type="number" placeholder="">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-4">
+                        <div class="text-format">
+                            Tỷ lệ hao mòn (%)
+                            <span>*</span>
+                        </div>
+                        <div class="custom-nums form__input--number input-control">
+                            <input id="wear-rate" name="wear-rate"  class="text-field hidden-arrow number-input" type="number" placeholder="" step="0.01">
+                            <div class="error"></div>
+                            <div class="arr-up-down">
+                                <div class="arr-up">
+                                    <i class="icon--8 icon--caret-up"></i>
+                                </div>
+                                <div class="arr-down">
+                                    <i class="icon--8 icon--caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 input-control">
+                        <div class="text-format">
+                            Giá trị hao mòn năm
+                            <span>*</span>
+                        </div>
+                        <input id="depreciated-value" name="depreciated-value"  class="text-field hidden-arrow number-input" type="number" placeholder="">
+                        <div class="error"></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-format">
+                            Năm theo dõi
+                        </div>
+                        <input id="tracking-year" name="tracking-year"  class="text-field highlight-input number-input" type="number" disabled placeholder="">
+                    </div>
+                </div>
+                <div class="row grid-row">
+                    <div class="col-4">
+                        <div class="text-format">
+                            Ngày mua
+                            <span>*</span>
+                        </div>
+                        <div class="date-input-container input-control">
+                            <input id="purchase-date" name="purchase-date"  class="date-input text-field" type="date">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-format">
+                            Ngày bắt đầu sử dụng
+                            <span>*</span>
+                        </div>
+                        <div class="date-input-container input-control">
+                            <input id="using-date" name="using-date"  class="date-input text-field" type="date">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-form">
+                    <button class="cancel" type="button">Hủy</button>
+                    <button class="submit" type="submit">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <div class="success-msg alert">
+        <div class="icon--success"></div>
+        <span class="msg">Lưu dữ liệu thành công</span>
+    </div>
+
+    <script src="./js/estates/estate.js"></script>
+    <script src="./js/estates/sidebar_collapse.js"></script>
+    <script src="./js/estates/validate.js"></script>
+    <script src="./js/helpers/common.js"></script>
+    <script src="./js/helpers/custom-num.js"></script>
+
+</body>
+</html> 

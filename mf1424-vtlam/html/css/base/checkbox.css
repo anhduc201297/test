@@ -1,0 +1,18 @@
+.checkbox-list--gender{
+    display:flex;
+    align-items: center;
+    height:36px;
+    gap:12px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.checkbox__field {
+    width:20px;
+    height:20px;
+    accent-color:#409330;
+}

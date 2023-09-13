@@ -1,0 +1,30 @@
+/* Tùy chỉnh thanh cuộn dọc */
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #b6b6b6;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
+}
+
+/* Tùy chỉnh vùng theo dõi của thanh cuộn */
+.scrollbar::-webkit-scrollbar-track {
+  
+}
+
+/* Tùy chỉnh ngón tay cuộn khi nằm trên vùng theo dõi */
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+

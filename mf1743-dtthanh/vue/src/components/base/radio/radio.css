@@ -1,0 +1,8 @@
+/* Input radio */
+input[type=radio] {
+    height: 18px;
+    width: 18px;
+    accent-color: var(--color-primary);
+    margin-right: 4px;
+    cursor: pointer;
+}

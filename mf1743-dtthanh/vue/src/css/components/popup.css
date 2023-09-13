@@ -1,0 +1,120 @@
+.popup {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 98;
+}
+
+.add-form-container {
+    min-width: 900px;
+    max-width: 900px;
+    width: 900px;
+    position: relative;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+}
+
+
+.popup-container {
+    padding: 24px 24px 0px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* popup header */
+.popup-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.popup-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.popup-title__text {
+    font-size: 24px;
+}
+
+.popup-close {
+    display: flex;
+}
+
+.icon-popup-help {
+    background-position: -89px -145px;
+    width: 22px;
+	height: 22px;
+}
+
+.icon-popup-close {
+    background-position: -147px -147px;
+    width: 18px;
+	height: 18px;
+}
+
+.popup-title__checkbox {
+    padding: 0px 16px 0px 16px;
+}
+/* Popup content */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content h4 {
+    padding-bottom: 4px;
+}
+
+
+/* Popup Footer */
+.popup-footer-2 {
+    justify-content: space-between;
+    padding: 12px 24px 12px 24px;
+    border-top: 1px solid #eee;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: var(--border-radius) ;
+    border-bottom-right-radius: var(--border-radius) ;
+}
+
+.popup-btn-right-group {
+    justify-content: flex-end;
+}
+
+
+/* Phần riêng */
+
+.add-form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form-row {
+    padding-bottom: 8px;
+}
+
+/* Phần content */
+
+/* Above */
+
+.add-form-tl {
+    flex: 1;
+    padding-right: 26px;
+}
+
+.add-form-tr {
+    flex: 1;
+
+}

@@ -1,0 +1,137 @@
+/* Primary Button */
+.pri-button {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--border-radius);
+    height: var(--height-default);
+    padding: 0 16px;
+    font-size: 13px;
+    font-style: normal;
+    text-align: center;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.pri-button:hover {
+    background-color: var(--color-hover);
+}
+
+.pri-button:active, .pri-button:focus {
+    background-color: var(--color-focus);
+}
+/* End Primary Button */
+
+/* Primary Button with Icon */
+.pri-button-icon--default {
+    display: flex;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--border-radius);
+    height: var(--height-default);
+    padding: 0 12px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    text-align: left;
+    min-width: 80px;
+}
+
+.pri-button-icon--default .pri-button-icon {
+    width: 20px;
+    padding: auto 0;
+    margin-right: 4px;
+}
+
+.pri-button-icon--default:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+.pri-button-icon--default:active, .pri-button-icon--default:focus {
+    background-color: var(--color-focus);
+}
+/* End Primary Button with Icon */
+
+/* Secondary Button */
+.sec-button {
+    background-color: #ffffff;
+    /* border: none; */
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
+    min-width: 80px;
+    height: var(--height-default);
+    padding: 0 16px;
+    font-size: 13px;
+    font-style: normal;
+    text-align: center;
+    min-width: 80px;
+    color: #000;
+    cursor: pointer;
+}
+
+.sec-button:hover {
+    background-color: #eee;
+}
+
+/*  */
+
+/* Icon Button */
+.icon-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .16);
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: #eee;
+}
+/* Button carret up-down */
+.custom-nums{
+    position: relative;
+}
+.arr-up-down{
+    height: 100%;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 4px;
+}
+
+.arr-up{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border-radius: 3px;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: end;
+}
+.arr-down{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    border-radius: 3px;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: start;
+}
+.arr-up:hover,
+.arr-down:hover{
+    cursor: pointer;
+    border: 1px solid #573;
+}

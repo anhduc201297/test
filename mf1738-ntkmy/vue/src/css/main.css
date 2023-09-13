@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Regular Fonts;
+    src: url('../assets/fonts/notosans-regular.2cb88a13.woff2');
+}
+
+@font-face {
+    font-family: Bold Fonts;
+    src: url('../assets/fonts/notosans-bold.3ede5aff.woff2');
+}
+
+@font-face {
+    font-family: SemiBold Fonts;
+    src: url('../assets/fonts/notosans-semibold.df3e6dc4.woff2');
+}
+
+@font-face {
+    font-family: Italic Fonts;
+    src: url('../assets/fonts/notosans-italic.1c1aaac9.woff2');
+}
+
+* {
+    font-family: Regular Fonts;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary : #089740;
+    --color-hover: #6BC18D;
+    --border-radius: 4px;
+    --color-border-default: #EBEBEB;
+    --icon-size: 24px;
+    --font-size:14px;
+    --font-color: #00000;
+}

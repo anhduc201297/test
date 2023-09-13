@@ -1,0 +1,47 @@
+diff --git a/node_modules/ms-combobox/src/ms-combobox.vue b/node_modules/ms-combobox/src/ms-combobox.vue
+index 712ac1c..9cae56d 100644
+--- a/node_modules/ms-combobox/src/ms-combobox.vue
++++ b/node_modules/ms-combobox/src/ms-combobox.vue
+@@ -136,6 +136,7 @@ export default {
+     clickoutside,
+   },
+   props: {
++    modelValue,
+     value: null,
+     url: String,
+     propValue: String,
+@@ -145,6 +146,7 @@ export default {
+       default: true,
+     },
+   },
++  emit: ["update:modelValue"],
+   methods: {
+     /**
+      * Lưu lại index của item đã focus
+@@ -182,6 +184,7 @@ export default {
+       this.indexItemSelected = index;
+       this.isShowListData = false;
+       this.$emit("getValue", value, text, item);
++      this.$emit("update:modelValue", this.textInput)
+     },
+ 
+     /**
+@@ -252,6 +255,9 @@ export default {
+           break;
+       }
+     },
++    onInput () {
++      this.$emit("update:modelValue", this.textInput)
++    }
+   },
+ 
+   created() {
+@@ -271,7 +277,7 @@ export default {
+   data() {
+     return {
+       data: [], // data gốc
+-      textInput: null,
++      textInput: this.modelValue,
+       dataFilter: [], // data đã được filter
+       isShowListData: false, // Hiển thị list data hay không
+       indexItemFocus: null, // Index của item focus hiện tại

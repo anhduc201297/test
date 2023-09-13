@@ -1,0 +1,233 @@
+.mi {
+  background: url(../../../assets/img/Sprites.64af8f61.svg) no-repeat;
+  cursor: pointer;
+}
+
+.mi-14 {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+}
+
+.mi-16 {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+.mi-24 {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.mi-32 {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.mi-app {
+  background-position: -428px -92px;
+}
+
+/*  icon cho sidebar  */
+.mi-sidebar-dashboard {
+  background-position: -33px -1630px;
+}
+.menu-item:active .mi-sidebar-dashboard,
+.menu-item:focus .mi-sidebar-dashboard {
+  background-position: -33px -1587px;
+}
+/* --- */
+.mi-sidebar-cash {
+  background-position: -78px -1631px;
+}
+.menu-item:active .mi-sidebar-cash,
+.menu-item:focus .mi-sidebar-cash {
+  background-position: -78px -1588px;
+}
+/* ----- */
+.mi-sidebar-bank {
+  background-position: -121px -1633px;
+}
+.menu-item:active .mi-sidebar-bank,
+.menu-item:focus .mi-sidebar-bank {
+  background-position: -121px -1590px;
+}
+/* ----- */
+.mi-sidebar-pu {
+  background-position: -165px -1632px;
+}
+.menu-item:active .mi-sidebar-pu,
+.menu-item:focus .mi-sidebar-pu {
+  background-position: -165px -1589px;
+}
+/* ----- */
+.mi-sidebar-sale {
+  background-position: -206px -1631px;
+}
+.menu-item:active .mi-sidebar-sale,
+.menu-item:focus .mi-sidebar-sale {
+  background-position: -206px -1588px;
+}
+/* ----- */
+.mi-sidebar-invoice {
+  background-position: -254px -1632px;
+}
+.menu-item:active .mi-sidebar-invoice,
+.menu-item:focus .mi-sidebar-invoice {
+  background-position: -254px -1589px;
+}
+/* ----- */
+.mi-sidebar-stock {
+  background-position: -294px -1632px;
+}
+.menu-item:active .mi-sidebar-stock,
+.menu-item:focus .mi-sidebar-stock {
+  background-position: -294px -1589px;
+}
+/* ----- */
+.mi-sidebar-tools {
+  background-position: -339px -1633px;
+}
+.menu-item:active .mi-sidebar-tools,
+.menu-item:focus .mi-sidebar-tools {
+  background-position: -339px -1590px;
+}
+/* ----- */
+.mi-sidebar-fixed-asets {
+  background-position: -382px -1632px;
+}
+.menu-item:active .mi-sidebar-fixed-asets,
+.menu-item:focus .mi-sidebar-fixed-asets {
+  background-position: -382px -1589px;
+}
+/* ----- */
+.mi-sidebar-tax {
+  background-position: -427px -1634px;
+}
+.menu-item:active .mi-sidebar-tax,
+.menu-item:focus .mi-sidebar-tax {
+  background-position: -427px -1591px;
+}
+/* ----- */
+.mi-sidebar-price {
+  background-position: -470px -1633px;
+}
+.menu-item:active .mi-sidebar-price,
+.menu-item:focus .mi-sidebar-price {
+  background-position: -470px -1590px;
+}
+/* ----- */
+.mi-sidebar-general {
+  background-position: -514px -1632px;
+}
+.menu-item:active .mi-sidebar-general,
+.menu-item:focus .mi-sidebar-general {
+  background-position: -514px -1590px;
+}
+/* ----- */
+.mi-sidebar-budget {
+  background-position: -382px -1664px;
+}
+.menu-item:active .mi-sidebar-budget,
+.menu-item:focus .mi-sidebar-budget {
+  background-position: -427px -1664px;
+}
+/* ----- */
+.mi-sidebar-finance {
+  background-position: -207px -1667px;
+}
+.menu-item:active .mi-sidebar-finance,
+.menu-item:focus .mi-sidebar-finance {
+  background-position: -251px -1667px;
+}
+/* ----- */
+.mi-sidebar-report {
+  background-position: -552px -1636px;
+}
+.menu-item:active .mi-sidebar-report,
+.menu-item:focus .mi-sidebar-report {
+  background-position: -552px -1593px;
+}
+
+/* --------  icon cho header   -------- */
+.mi-three-stripes {
+  background-position: -845px -30px;
+}
+
+.mi-bell__nav {
+  background-position: -788px -30px;
+}
+.mi-user-avatar {
+  background-position: -352px -894px;
+}
+.mi-chev-ron-down {
+  background-position: -465px -408px;
+}
+.mi-chevron-right {
+  background-position: -1124px -357px;
+}
+
+/* icon cho main-content */
+.mi-search {
+  background-position: -425px -33px;
+}
+
+.mi-refresh {
+  background-position: -1096px -88px;
+}
+
+.mi-arrow-up-blue {
+  background-position: -895px -358px;
+}
+
+/* ----- mi-arrow-dropdown trong pagination ----- */
+.mi-arrow-dropdown {
+  background-position: -561px -359px;
+}
+.mi-arrow-dropdown--close {
+  transform: rotate(0deg);
+  transition: transform 0.15s linear;
+}
+.mi-arrow-dropdown--open {
+  transform: rotate(180deg);
+  transition: transform 0.15s linear;
+}
+
+/* ------ icons trong popup form-detail nhân viên ------ */
+
+.mi-help {
+  background-position: -89px -144px;
+}
+.mi-close {
+  background-position: -144px -144px;
+}
+.mi-tick {
+  background-position: -1291px -557px;
+}
+.mi-calendar {
+  background-position: -124px -308px;
+}
+
+/* ------ icons trong dialog ------ */
+.mi-warning {
+  background-position: -593px -145px;
+}
+
+/* ------ icons trong toast ------ */
+.mi-success {
+  background-position: -1602px -258px; 
+}
+
+.mi-error {
+  background-position: -762px -146px; /* icon chưa hoàn toàn chính xác theo zero */
+}
+
+.mi-info {
+  background-position: -706px -146px; /* icon chưa hoàn toàn chính xác theo zero */
+}

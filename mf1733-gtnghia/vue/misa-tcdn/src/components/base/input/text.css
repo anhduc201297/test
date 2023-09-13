@@ -1,0 +1,83 @@
+/* -----------INPUT CONTAINER-----------*/
+.input-container {
+  width: 100%;
+}
+
+.label-box {
+  margin-bottom: 8px;
+}
+
+.label-box.required::after {
+  content: " *";
+  display: inline;
+  color: red;
+}
+
+.input-box {
+}
+
+/* -----------LABEL FIELD-----------*/
+.label-field-s {
+  height: 11px;
+}
+
+.label-field-s:required {
+  content: "*";
+  display: inline;
+  color: red;
+}
+
+/* -----------INPUT FIELD-----------*/
+.input-field-s {
+  padding: 0 12px;
+  width: 100%;
+  height: 32px;
+  font-size: 13px;
+  /* line-height: 10px; */
+  font-style: italic;
+  background-color: #fff;
+  border: 1px solid var(--border-color-grey);
+  outline: none;
+  border-radius: 4px;
+}
+
+.input-field-s:hover,
+.input-field-m:hover {
+  background-color: var(--background-color-grey-hover);
+}
+
+.input-field-s:focus,
+.input-field-m:focus {
+  border-color: var(--element-color-blue-focus);
+}
+
+.input-field-s.error,
+.input-field-m.error {
+  border-color: var(--element-color-error);
+}
+
+.input-field-s.input-readonly,
+.input-field-m.input-readonly {
+  background-color: var(--background-color-silver);
+}
+
+.input-field-s.input-icon {
+  padding-right: calc(7px + 14px);
+}
+
+.input-field-m {
+  padding: 0 16px;
+  height: 36px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid var(--border-color-grey);
+  outline: none;
+  border-radius: 4px;
+}
+
+.input-error {
+  /* position: absolute; */
+  font-size: 12px;
+  height: 14px;
+  display: none;
+}

@@ -1,0 +1,227 @@
+.container-header {
+    font-family: notosans-semibold;
+    font-size: 14px;
+    display: flex;
+    height: 56px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon,
+.header-branch,
+.header-tooltip,
+.btn-info {
+    cursor: pointer;
+}
+
+.header-icon {
+    margin: 0 10px;
+}
+
+.container-header .header-branch {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding-left: 10px;
+}
+
+.container-header .header-branch .header-branch-title {
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+
+.container-header .account-info .account-info-btn {
+    font-family: notosans-semibold;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    margin-left: 48px;
+    margin-right: 16px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.container-header .account-info .btn-info-div {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    color: #000;
+}
+
+.btn-info-div .user-avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.container-content {
+    height: calc(100vh - 56px);
+    padding: 0 24px;
+}
+
+.container-content .table-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.container-content .table-title .table-name {
+    font-family: notosans-bold;
+    font-size: 24px;
+}
+
+.container-content .table-content {
+    background-color: #fff;
+    height: calc(100vh - 56px - 108px);
+    position: relative;
+}
+
+.container-content .table-content .table-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.table-control .left-control,
+.table-control .right-control {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.table-control .left-control .clear-check {
+    color: var(--input-border-color-error);
+    margin-left: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.table-control .left-control .action-tbl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--input-border-color-error);
+    border-radius: 4px;
+    width: 108px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.table-control .left-control .action-tbl:hover {
+    background-color: var(--minor-button-background-color_hover);
+}
+
+.table-control .left-control .action-tbl:active {
+    background-color: var(--minor-button-background-color_active);
+}
+
+.table-control .left-control .action-content {
+    width: calc(100% - 36px);
+    text-align: center;
+    margin-right: 6px;
+    color: var(--input-border-color-error);
+}
+
+.table-control .right-control {
+    position: absolute;
+    right: 20px;
+}
+
+.table-data {
+    font-size: 12px;
+    margin: 0 20px;
+    height: calc(100% - 56px - 52px);
+    overflow-y: auto;
+}
+
+.table-pagination {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.record-in-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 200px;
+    height: 28px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+/* .record-in-page:active {
+    border-color: var(--primary-btn-background-color);
+} */
+
+/* .record-in-page:active + .droplist-record {
+    display: block;
+} */
+
+.record-in-page .record-value {
+    margin-left: 12px;
+}
+
+.record-in-page .record-more-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+}
+
+.record-in-page .record-more-option:hover {
+    background-color: var(--input-border-color);
+}
+
+body:active .icon-arrow-up {
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+}
+
+.page-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.page-number .pre-page {
+    color: #a6a6a6;
+}
+
+.page-number .page-index {
+    display: flex;
+    margin: 4px 8px;
+    cursor: pointer;
+}
+
+.page-number .page-index-item {
+    padding: 0 6px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.table-content .table-disable {
+    height: calc(100% - 68px);
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    background-color: #0000001d;
+    z-index: 5;
+}

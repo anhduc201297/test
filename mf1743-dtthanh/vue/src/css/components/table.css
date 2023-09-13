@@ -1,0 +1,119 @@
+/* table */
+
+/* Căn chỉnh table, thêm sticky cho header và td cuối */
+.content-main {
+    padding: 0px 12px 0px 12px;
+    background-color: #fff;
+}
+
+.content-main-table {
+    border-radius: var(--border-radius);
+    border: 1px solid #EEEEEE;
+}
+
+.content-main-table table {
+    min-width: 200px;
+    border-collapse: separate;
+    border-spacing: 0;
+    white-space: nowrap;
+}
+
+.content-main-table th,
+td {
+    padding: 0 16px;
+    font-size: 12px;
+    height: 48px;
+}
+
+.content-main-table tr:hover td {
+    background-color: #EEEFF1;
+}
+
+.content-main-table th {
+    font-weight: 700;
+    color: #1F1F1F;
+    background-color: #9CD5B3;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.content-main-table td {
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.content-main-table th:last-child {
+    border-left: 1px solid #6BC18D;
+    right: 0;
+    z-index: 2;
+}
+
+.content-main-table td:last-child {
+    position: sticky;
+    right: 0;
+    border-left: 1px solid #EEEEEE;
+}
+
+.content-main-table tr td .icon {
+    background-position: -900px -350px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: #ffffff00;
+}
+
+/*Btn sửa và icon */
+.table-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-text {
+    color: #007AFF;
+    /* border: none; */
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600px;
+    cursor: pointer;
+
+}
+
+.table-icon-down {
+    position: absolute;
+    top: -4px;
+    right: -16px;
+    background-position: -894px -356px;
+    border: none;
+    cursor: pointer;
+}
+
+.table-icon-down:focus .table-dropdown {
+    display: block;
+}
+
+/* Dropdown */
+.table-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 500;
+    top: 100%;
+    right: 0;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+}
+
+.table-dropdown li {
+    text-align: left;
+    padding: 8px;
+    width: 150px;
+    background-color: #FFFFFF;
+}
+
+.table-dropdown li:hover {
+    background-color: #eee;
+    color: #57C841;
+}

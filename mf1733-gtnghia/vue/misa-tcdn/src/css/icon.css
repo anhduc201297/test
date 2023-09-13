@@ -1,0 +1,202 @@
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.icon {
+  background-image: url('../assets/icon/icon.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.icon.icon-menu-option {
+    background-position: -1153px -28px;
+}
+
+.icon.icon-bell-bold {
+    width: 32px;
+    height: 32px;
+    background-position: -783px -26px;
+}
+
+.icon.icon-bell-light {
+    width: 32px;
+    height: 32px;
+    background-position: -252px -27px;
+}
+
+.icon.icon-menu-bar {
+    background-position: -845px -30px;
+}
+
+.icon.icon-reload {
+    background-position: -423px -200px;
+}
+
+.icon.icon-arrow-blue-solid-bottom {
+    background-position: -892px -356px;
+}
+
+.icon.icon-arrow-blue-top {
+    background-position: -126px -356px;
+}
+
+.icon.icon-arrow-blue-right {
+    background-position: -268px -356px;
+}
+
+.icon.icon-arrow-blue-left {
+    background-position: -220px -356px;
+}
+
+.icon.icon-arrow-blue-bottom {
+    background-position: -175px -356px;
+}
+
+
+.icon.icon-search {
+    background-position: -991px -360px;
+}
+
+.icon.icon-search-detail {
+    background-position: -29px -1660px;
+}
+
+.icon.icon-help {
+    width: 24px;
+    height: 24px;
+    background-position: -87px -143px;
+}
+
+.icon.icon-close {
+    background-position: -143px -143px;
+}
+
+.icon.icon-close-s {
+    background-position: -1171px -357px;
+}
+
+.icon.icon-xmark {
+    background-position: -78px -310px;
+}
+
+.icon.icon-overview {
+    background-position: -30px -1629px;
+}
+
+.icon.icon-cash {
+    background-position: -73px -1630px;
+
+}
+
+.icon.icon-customer {
+    background-position: -116px -1660px;
+
+}
+
+.icon.icon-employee {
+    background-position: -116px -1660px;
+
+}
+
+.icon.icon-deposit {
+    background-position: -117px -1630px;
+
+}
+
+.icon.icon-purchase {
+    background-position: -161px -1630px;
+
+}
+
+.icon.icon-sell {
+    background-position: -205px -1630px;
+
+}
+
+.icon.icon-bill {
+    background-position: -249px -1630px;
+
+}
+
+.icon.icon-warehouse {
+    background-position: -291px -1630px;
+
+}
+
+.icon.icon-tools {
+    background-position: -336px -1630px;
+
+}
+
+.icon.icon-assets {
+    background-position: -379px -1630px;
+
+}
+
+.icon.icon-salary {
+    background-position: -291px -1661px;
+
+}
+
+.icon.icon-tax {
+    background-position: -423px -1632px;
+}
+
+.icon.icon-price {
+    width: 26px;
+    background-position: -466px -1630px;
+}
+
+
+.icon.icon-synthetic {
+    width: 26px;
+    background-position: -509px -1630px;
+
+}
+
+.icon.icon-budget {
+    background-position: -378px -1662px;
+
+}
+
+.icon.icon-report {
+    background-position: -547px -1630px;
+}
+
+.icon.icon-analysis {
+    background-position: -204px -1663px;
+}
+
+.icon.icon-duplicate {
+    width: 26px;
+    height: 26px;
+    background-position: -1544px -86px;
+}
+
+.icon.icon-success {
+    background-position: -844px -308px;
+}
+
+.icon.icon-error {
+    background-position: -1548px -308px;
+}
+
+.icon.icon-warning {
+    background-position: -1085px -308px;
+}
+
+.icon.icon-warning-l {
+    width: 40px;
+    height: 40px;
+    background-position: -597px -461px;
+}
+
+.icon.icon-info {
+    background-position: -1228px -308px;
+}
+

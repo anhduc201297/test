@@ -1,0 +1,51 @@
+.main-content {
+  margin: 12px 0 0 12px; /* zero */
+  width: calc(100% - 12px); /* margin-left = 12px */
+  height: calc(100vh - 68px); /* height-header = 56px, margin-top = 12px */
+  background-color: var(--main-background-color);
+  padding: 0 12px 8px 0;
+}
+/* main-content -- top */
+.main-content-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content-title {
+  font-size: 24px; /* tham khảo */
+  font-weight: 700; /* tham khảo */
+  color: #111;
+}
+
+/* main-content -- content-layout */
+.contents-layout {
+  margin-top: 8px; /* tham khảo */
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  height: calc(100% - 44px);
+  background-color: #fff;
+}
+
+.grid-list-data {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+/* main-content -- grid-model-control */
+.grid-model-control {
+  min-width: 100%;
+  height: 0;
+  padding-top: 8px;
+  flex: 1;
+}
+
+.ms-grid-viewer {
+  min-width: 100%;
+  height: 100%;
+  max-height: none;
+}
+

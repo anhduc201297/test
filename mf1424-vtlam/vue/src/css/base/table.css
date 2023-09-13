@@ -1,0 +1,134 @@
+.table{
+    position:relative;
+    overflow:hidden;
+}
+
+.table__content {
+    overflow:scroll;
+    border-radius: var(--border-radius);
+    border:1px solid var(--color-border-default)
+}
+
+.table__content--employee {
+    height: 456px;
+}
+
+.table__content::-webkit-scrollbar {
+    width:0;
+    height:12px;
+}
+
+.table__content::-webkit-scrollbar-thumb {
+    background: #BDBDBD;
+}
+
+table{
+    width:100%;
+    border-spacing: 0;
+}
+
+tbody tr:hover td {
+    background-color: #F5F5F5;
+    cursor:pointer;
+}
+
+th, td{
+    border-bottom: 1px solid #E0E0E0;
+    height:48px;
+    text-align:left;
+    padding: 0 16px;
+    white-space: nowrap;
+}
+
+th{
+    background-color: #EEEEEE;
+    position:sticky;
+    top:0;
+    font-weight:bold;
+    z-index:2;
+    text-transform: uppercase;
+}
+
+td{
+    background-color: white;
+    position:relative;
+}
+
+th.date, td.date {
+    text-align: center;
+}
+
+.row-checked td, .row-checked:hover td{
+    background-color: #E7F5EC;
+}
+
+th:first-child, td:first-child {
+    position:sticky;
+    left:0;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    padding-left:0;
+}
+
+th:last-child, td:last-child{
+    /* border-left: 1px solid #E0E0E0; */
+    position:sticky;
+    right:0;
+}
+
+th:first-child,th:last-child{
+    z-index:3;
+}
+
+td:first-child, td:last-child{
+    z-index:1
+}
+
+.table__functions {
+    position:absolute;
+    right:1px;
+    z-index:2;
+    top:0;
+    height:48px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding-right:16px;
+    visibility: hidden;
+}
+
+.table:hover .table__functions {
+    visibility: visible;
+}
+
+.table__button {
+    padding:0;
+    height:36px;
+    width:36px;
+    border-radius: 50%;
+    color:#757575;
+    border: 1px solid #E0E0E0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__more-functions {
+    position: relative;
+}
+
+.table__function-list {
+    position: absolute;
+    right:0;
+    top: calc(100% + 2px);
+    display:none;
+}
+
+.table__more-functions:hover .table__function-list {
+    display:block;
+}
+
+
+
+

@@ -1,0 +1,30 @@
+.delete-notify-dialog{
+    width: 400px;
+    padding: 24px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #fff
+}
+
+.delete-notify-dialog .header-dialog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.delete-notify-dialog .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.delete-notify-dialog .content-dialog{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-notify-dialog .footer-dialog{
+    display: flex;
+    justify-content: flex-end;
+}
+

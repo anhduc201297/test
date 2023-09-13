@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon__sidebar icon icon__dashboard"
+          ></div>
+          <div class="sidebar__item--text">Tổng quan</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon__sidebar icon icon__deposit"
+          ></div>
+          <div class="sidebar__item--text">Tiền gửi</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__buy"></div>
+          <div class="sidebar__item--text">Mua hàng</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__shop"></div>
+          <div class="sidebar__item--text">Bán hàng</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__order"></div>
+          <div class="sidebar__item--text">Quản lý hóa đơn</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__warehouses"
+          ></div>
+          <div class="sidebar__item--text">Kho</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__tools"></div>
+          <div class="sidebar__item--text">Công cụ dụng cụ</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__fixedassets"
+          ></div>
+          <div class="sidebar__item--text">Tài sản cố định</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__tax"></div>
+          <div class="sidebar__item--text">Thuế</div>
+        </div>
+        <div class="sidebar__item">
+          <div class="sidebar__item--icon icon icon__sidebar icon__price"></div>
+          <div class="sidebar__item--text">Giá thành</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__general"
+          ></div>
+          <div class="sidebar__item--text">Tổng hợp</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__budget"
+          ></div>
+          <div class="sidebar__item--text">Ngân sách</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__report"
+          ></div>
+          <div class="sidebar__item--text">Báo cáo</div>
+        </div>
+        <div class="sidebar__item">
+          <div
+            class="sidebar__item--icon icon icon__sidebar icon__analyst"
+          ></div>
+          <div class="sidebar__item--text">Phân tích tài chính</div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header__left">
+          <div class="header__logo">
+            <div class="header__logo--icon icon icon__logo"></div>
+            <div class="header__logo--img">
+              <img
+                src="/assets/img/Logo_Module_TiengViet_White.66947422.svg"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div class="header__select">
+            <div class="header__select--icon icon icon__toggle"></div>
+            <div class="header__select--cbl">
+              <div class="option-company">
+                CÔNG TY TNHH SẢN XUẤT-THƯƠNG MẠI-DỊCH VỤ-QUI PHÚC
+              </div>
+              <div class="arrow-down-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="tooltip">
+            <div class="header__right--ring icon icon__ring"></div>
+            <span class="tooltiptext tooltipIcon">Thông báo</span>
+          </div>
+          <div class="header__right-info">
+            <div class="info__img icon icon__user"></div>
+            <div class="text__info">Lưu Tùng Linh</div>
+          </div>
+          <div class="header__right__accont--toggle icon icon__drop"></div>
+        </div>
+      </div>
+      <!-- <button class="btn logout">Đăng xuất</button> -->
+      <div class="content">
+        <div class="top__content">
+          <div class="top__content--title fonts__title">NHÂN VIÊN</div>
+          <div class="top__content--add">
+            <button class="btn btn__add" id="btnAdd">Thêm mới nhân viên</button>
+          </div>
+        </div>
+        <div class="inner__content">
+          <div class="inner__top">
+            <div class="inner__top--left">
+              <!-- <button class="btn btn__multiple">Thực hiện hàng loạt</button>
+              <button class="btn btn__delete--multiple">Xóa</button> -->
+            </div>
+            <div class="inner__top--right">
+              <div class="content__search">
+                <input
+                  type="text"
+                  class="input fonts__input"
+                  placeholder="Tìm kiếm theo mã, tên, số điện thoại"
+                />
+                <div class="search icon icon__search"></div>
+              </div>
+              <div class="tooltip">
+                <div class="content__reload icon icon__reload"></div>
+                <span class="tooltiptext tooltipIcon">Lấy lại dữ liệu</span>
+              </div>
+              <div class="tooltip">
+                <div class="content__excel icon icon__excel"></div>
+                <span class="tooltiptext tooltipIcon">Xuất ra excel</span>
+              </div>
+            </div>
+          </div>
+          <div class="content__data">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </th>
+                  <th class="width__150 text__left">Mã nhân viên</th>
+                  <th class="width__200 text__left">Tên nhân viên</th>
+                  <th class="width__100 text__left">Giới tính</th>
+                  <th class="width__100 text-align--center">Ngày sinh</th>
+                  <th class="width__100 text__left">
+                    <div class="tooltip">Số CMND</div>
+                  </th>
+                  <th class="width__150 text__left">Tên đơn vị</th>
+                  <th class="width__150 text__left">Chức danh</th>
+                  <th class="width__100 text__left">Số tài khoản</th>
+                  <th class="width__340 text__left">Tên ngân hàng</th>
+                  <th class="width__250 text__left">Chi nhánh TK ngân hàng</th>
+                  <th
+                    class="column__sticky column__edit column__edit--th width__100"
+                  >
+                    Chức năng
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="column__sticky column__checkbox sticky__row">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    id="showListTable"
+                    class="column__sticky sticky__row text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop hoverable"></div>
+                  </td>
+                  <div>
+                    <div class="value__edit" id="showValue_edit">
+                      <div class="edit__item">Nhân bản</div>
+                      <div class="edit__item">Xóa</div>
+                      <div class="edit__item">Ngừng sử dụng</div>
+                    </div>
+                  </div>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column__sticky column__checkbox">
+                    <input
+                      type="checkbox"
+                      class="input__checkbox"
+                      name=""
+                      value=""
+                    />
+                  </td>
+                  <td class="width__150 text__left">MF1707</td>
+                  <td class="width__200 text__left">Lưu Tùng Linh</td>
+                  <td class="width__100 text__left">Nam</td>
+                  <td class="width__100 text__center">07/07/2000</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__150 text__left">HN</td>
+                  <td class="width__150 text__left">Dev</td>
+                  <td class="width__100 text__left">0123456789</td>
+                  <td class="width__250 text__left">Techcombank</td>
+                  <td class="width__250 text__left">Cầu Giấy</td>
+                  <td
+                    class="column__sticky text__center column__edit width__100 edit__td"
+                  >
+                    <div class="btn__settings text__edit">Sửa</div>
+                    <div class="icon icon__edit--drop first"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content__bottom">
+            <div class="bottom__left">
+              Tổng số: <span class="total__record">6</span> bản ghi
+            </div>
+            <div class="bottom__right">
+              <div class="row__page">
+                <div class="droplist__page">
+                  <div class="droplist__text">20 bản ghi trên một trang</div>
+                  <!-- <div class="droplist__data"></div> -->
+                  <div class="droplist__icon">
+                    <div class="droplist__icon-drop"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="page__number">
+                <div class="page__number--previous disabled">Trước</div>
+                <div class="page__item page__number--item first">1</div>
+                <div class="page__item dot">...</div>
+                <div class="page__item page__number--item second">2</div>
+                <div class="page__item page__number--item thrid">3</div>
+                <div class="page__item page__number--next">Sau</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- employee detail -->
+    <div class="dialog__wrap" id="range">
+      <div class="dialog__infoEmp" draggable>
+        <div class="dialog__infoEmp--top">
+          <div class="dialog__info">
+            <div class="dialog__info--name">Thông tin nhân viên</div>
+            <div class="dialog__info--checkbox">
+              <div class="checkbox__item">
+                <input
+                  type="checkbox"
+                  id="customer"
+                  class="checkbox__detail input__checkbox customer"
+                />
+                <label for="customer">Là khách hàng</label>
+              </div>
+              <div class="checkbox__item">
+                <input
+                  type="checkbox"
+                  id="supplier"
+                  class="checkbox__detail input__checkbox supplier"
+                />
+                <label for="supplier">Là nhà cung cấp</label>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__top--right">
+            <div class="tooltip">
+              <div
+                class="dialog__question icon icon__question"
+                id="icon__help"
+              ></div>
+              <span class="tooltiptext tooltipIcon">Giúp()</span>
+            </div>
+            <div class="tooltip">
+              <div class="dialog__close icon icon__close"></div>
+              <span class="tooltiptext tooltipIcon">Thoát(ESC)</span>
+            </div>
+          </div>
+        </div>
+        <div class="dialog__infoEmp--content">
+          <div class="content__info">
+            <div class="content__info--left">
+              <div class="info__left--first">
+                <div class="info__item info__code">
+                  <div class="label-input">
+                    Mã
+                    <span class="color-red">*</span>
+                  </div>
+                  <div class="content__input tooltip">
+                    <input
+                      type="text"
+                      class="input"
+                      id="myInput"
+                      maxlength="20"
+                    />
+                  </div>
+                </div>
+                <div class="info__item info__name">
+                  <div class="label-input">
+                    Tên
+                    <span class="color-red">*</span>
+                  </div>
+                  <div class="content__input tooltip">
+                    <input type="text" class="input" maxlength="100" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info__item info__item--max">
+                <div class="label-input">
+                  Đơn vị
+                  <span class="color-red">*</span>
+                </div>
+
+                <div class="content__input tooltip">
+                  <!-- <input type="text" class="input" maxlength="100" /> -->
+                  <select name="" id="popup__select__position">
+                    <option value="">Phòng nhân sự</option>
+                    <option value="">Phòng kỹ thuật</option>
+                    <option value="">Phòng kinh doanh</option>
+                  </select>
+                </div>
+              </div>
+              <div class="info__item info__item--max">
+                <div class="label-input">Chức danh</div>
+                <div class="content__input">
+                  <input class="input" type="text" maxlength="255" />
+                </div>
+              </div>
+            </div>
+            <div class="content__info--right">
+              <div class="info__right--first">
+                <div class="info__item">
+                  <div class="label-input">Ngày sinh</div>
+                  <div class="content__input dateOfBirth tooltip">
+                    <input
+                      type="date"
+                      class="datepickerCTM"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                </div>
+                <div class="info__item item__radio">
+                  <div class="label-input label-gender">Giới tính</div>
+                  <div class="content__radio">
+                    <div class="radio__item">
+                      <div class="bo">
+                        <input
+                          type="radio"
+                          class="input__radio"
+                          checked
+                          id="radio__boy"
+                          value="0"
+                          name="gender"
+                        />
+                      </div>
+
+                      <label for="radio__boy">Nam</label>
+                    </div>
+                    <div class="radio__item">
+                      <input
+                        type="radio"
+                        class="input__radio"
+                        id="radio__girl"
+                        value="1"
+                        name="gender"
+                      />
+                      <label for="radio__girl">Nữ</label>
+                    </div>
+                    <div class="radio__item">
+                      <input
+                        type="radio"
+                        class="input__radio"
+                        id="radio__other"
+                        value="2"
+                        name="gender"
+                      />
+                      <label for="radio__other">Khác</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="info__right--CMND">
+                <div class="info__item item__CMND">
+                  <div class="label-input tooltip">
+                    Số CMND
+                    <span class="tooltiptext tooltipForm"
+                      >Số chứng minh nhân dân</span
+                    >
+                  </div>
+                  <div class="content__input tooltip">
+                    <input class="input" maxlength="25" type="text" />
+                  </div>
+                </div>
+                <div class="info__item">
+                  <div class="label-input">Ngày cấp</div>
+                  <div class="content__input identityIssuedDate tooltip">
+                    <input
+                      class="datepickerCTM"
+                      type="date"
+                      placeholder="DD/MM/YYYY"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="info__item info__item--max">
+                <div class="label-input">Nơi cấp</div>
+                <div class="content__input">
+                  <input class="input" type="text" maxlength="255" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__address">
+            <div class="content__address--first">
+              <div class="info__item address__item--max">
+                <div class="label-input">Địa chỉ</div>
+                <div class="content__input">
+                  <input type="text" class="input" maxlength="255" />
+                </div>
+              </div>
+            </div>
+            <div class="info__other">
+              <div class="info__item item__other">
+                <div class="label-input tooltip tooltip__orther">
+                  ĐT di động
+                </div>
+                <div class="content__input tooltip">
+                  <input type="text" class="input" maxlength="50" />
+                </div>
+              </div>
+              <div class="info__item item__other">
+                <div class="label-input tooltip tooltip__orther">
+                  ĐT cố định
+                </div>
+                <div class="content__input tooltip">
+                  <input type="text" class="input" maxlength="50" />
+                </div>
+              </div>
+              <div class="info__item item__other">
+                <div class="label-input">Email</div>
+                <div class="content__input tooltip">
+                  <input type="text" class="input" maxlength="100" />
+                </div>
+              </div>
+            </div>
+            <div class="info__other">
+              <div class="info__item item__other">
+                <div class="label-input">Tài khoản ngân hàng</div>
+                <div class="content__input">
+                  <input
+                    type="text"
+                    class="input"
+                    maxlength="25"
+                    v-model="emp.bankAccount"
+                  />
+                </div>
+              </div>
+              <div class="info__item item__other">
+                <div class="label-input">Tên ngân hàng</div>
+                <div class="content__input">
+                  <input type="text" class="input" maxlength="255" />
+                </div>
+              </div>
+              <div class="info__item item__other">
+                <div class="label-input">Chi nhánh</div>
+                <div class="content__input">
+                  <input type="text" class="input" maxlength="255" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dialog__infoEmp--bottom">
+          <div class="dialog__left tooltip">
+            <button class="btn btn__cancel tooltip">
+              Hủy
+              <span class="tooltiptext tooltipIcon">Huỷ</span>
+            </button>
+          </div>
+          <div class="dialog__right">
+            <button class="btn btn__save tooltip">
+              Cất
+              <span class="tooltiptext tooltipIcon">Cất (Ctrl + S)</span>
+            </button>
+            <button class="btn btn__saveAdd tooltip">
+              Cất và thêm
+
+              <span class="tooltiptext tooltipIcon"
+                >Cất và thêm (Ctrl + Shift + S)</span
+              >
+            </button>
+            <button
+              style="height: 0; outline: 0; width: 0; border: 0; padding: 0"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wraning employee -->
+    <div class="wrap__warning" id="wrap__warning">
+      <div class="dialog__warning">
+        <div class="dialog__warning--top"></div>
+        <div class="dialog__warning--content">
+          <div class="waring__icon icon icon__waring"></div>
+          <div class="waring__content">
+            Mã nhân viên 001 hiện đang không tồn tại, vui lòng thực hiện sau
+          </div>
+        </div>
+        <hr />
+        <div class="dialog__warning--bottom">
+          <button class="btn btn__close" onclick="btnCloseClickDialog()">
+            Đồng ý
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

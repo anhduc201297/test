@@ -1,0 +1,24 @@
+@import url(icon.css);
+@import url(./components/button.css);
+@import url(./components/contextmenu.css);
+@import url(./components/table.css);
+@import url(./components/scrollbar.css);
+@import url(./components/modal.css);
+@import url(./components/popup.css);
+@import url(./components/dropdown.css);
+@import url(./components/toast.css);
+@import url(./components/input/input.css);
+@import url(./layouts/header.css);
+@import url(./layouts/sidebar.css);
+@import url(./layouts/content.css);
+@import url(config.css);
+
+.select-box {
+    padding: 8px 16px 9px 16px;
+    height: 36px;
+    width: calc(100%);
+    background-color: #fff;
+    border: 1px solid var(--border-color-grey);
+    outline: none;
+    border-radius: 4px;
+}

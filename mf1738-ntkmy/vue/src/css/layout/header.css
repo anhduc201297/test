@@ -1,0 +1,65 @@
+.header {
+    grid-area: area2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header--left {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -843px -30px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.header__title--dropdown {
+    background: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -80px -360px;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    margin-top: 10px;
+}
+
+.header__name {
+    font-family: Bold Fonts;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.header .header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo--notify {
+    background: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -788px -30px;
+}
+
+.header__account {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 24px;
+    gap: 8px;
+
+}
+
+.header__avatar {
+    background: url('../../assets/img/Sprites.64af8f61.svg');
+    background-position: -352px -894px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.header__username {
+    font-family: Bold Fonts;
+    font-size: var(--font-size);
+}
